@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акции на электросамокаты - POL PROKAT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="images/logo1.png" alt="POL PROKAT" 
+                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjUwIiB2aWV3Qm94PSIwIDAgMTUwIDUwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8dGV4dCB4PSI3NSIgeT0iMjgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtd2VpZ2h0PSJib2xkIj5QT0wgUFJPS0FUPC90ZXh0Pgo8L3N2Zz4='; this.style.filter='none'"
+                         style="height: 50px;">
+                </a>
+            </div>
+
+            <nav class="desktop-nav">
+    <a href="index.html" class="nav-link">ГЛАВНАЯ</a>
+    <a href="magazin.html" class="nav-link">МАГАЗИН</a>
+    <a href="page.html" class="nav-link">ЛЕТНИЙ ПРОКАТ</a>
+    <a href="page1.html" class="nav-link">ЗИМНИЙ ПРОКАТ</a>
+    <a href="serves.html" class="nav-link">СЕРВИС</a>
+    <a href="abonements.html" class="nav-link">АБОНЕМЕНТЫ</a>
+    <a href="#footer" class="nav-link">КОНТАКТЫ</a>
+</nav>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Мобильное меню -->
+        <nav class="mobile-nav" id="mobileNav">
+            <button class="mobile-close-btn" id="mobileCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="magazin.html" class="nav-link">Магазин</a>
+                <a href="page1.html" class="nav-link">Зимний прокат</a>
+                <a href="page.html" class="nav-link">Летний прокат</a>
+                <a href="serves.html" class="nav-link">Сервис</a>
+                <a href="sale.html" class="nav-link">Акции</a>
+                <a href="#footer" class="nav-link">Контакты</a>
+            <div class="mobile-phone">+7 (905) 805-40-54</div>
+        </nav>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="index.html">Главная</a> / <span>Акции на электросамокаты</span>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <div class="page-header">
+        <h1 class="page-title">АКЦИИ НА ЭЛЕКТРОСАМОКАТЫ</h1>
+        <p class="page-subtitle">Специальные предложения для всей семьи. Выберите подходящую акцию и экономьте!</p>
+    </div>
+
+    <!-- Сетка акций - 4 карточки в ряд -->
+    <section class="promotions-grid">
+        <!-- Акция 1: День дошкольника -->
+        <div class="promotion-card">
+            <div class="promotion-header">
+                <h3 class="promotion-title">«День дошкольника»</h3>
+                <div class="promotion-day">Каждый вторник</div>
+                <div class="promotion-subtitle">для детей до 7 лет</div>
+            </div>
+            
+            <div class="promotion-body">
+                <div class="promotion-condition">
+                    Специальные цены для самых маленьких
+                </div>
+                
+                <div class="promotion-prices">
+                    <div class="price-item">
+                        <span class="price-time">15 минут</span>
+                        <span class="price-amount">200 ₽</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-time">30 минут</span>
+                        <span class="price-amount">350 ₽</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Акция 2: День школьника -->
+        <div class="promotion-card">
+            <div class="promotion-header">
+                <h3 class="promotion-title">«День школьника»</h3>
+                <div class="promotion-day">Каждый четверг</div>
+                <div class="promotion-subtitle">для детей от 7 до 18 лет</div>
+            </div>
+            
+            <div class="promotion-body">
+                <div class="promotion-condition">
+                    Выгодные цены для школьников и студентов
+                </div>
+                
+                <div class="promotion-prices">
+                    <div class="price-item">
+                        <span class="price-time">15 минут</span>
+                        <span class="price-amount">200 ₽</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-time">30 минут</span>
+                        <span class="price-amount">350 ₽</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Акция 3: День родителя -->
+        <div class="promotion-card">
+            <div class="accent-badge">1+1</div>
+            <div class="promotion-header">
+                <h3 class="promotion-title">«День родителя»</h3>
+                <div class="promotion-day">Каждую среду</div>
+                <div class="promotion-subtitle">для детей и родителей</div>
+            </div>
+            
+            <div class="promotion-body">
+                <div class="promotion-condition">
+                    Платишь за ребенка и если вес родителя до 80 кг, то он катается бесплатно
+                </div>
+                
+                <div class="promotion-prices">
+                    <div class="price-item">
+                        <span class="price-time">Ребенок 15 мин</span>
+                        <span class="price-amount">250 ₽</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-time">Родитель до 80кг</span>
+                        <span class="price-amount">БЕСПЛАТНО</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Акция 4: Удваиваем время -->
+        <div class="promotion-card">
+            <div class="promotion-header">
+                <h3 class="promotion-title">«Удваиваем время»</h3>
+                <div class="promotion-day">С ПН по ПТ</div>
+                <div class="promotion-subtitle">с 12 до 14 часов</div>
+            </div>
+            
+            <div class="promotion-body">
+                <div class="promotion-condition">
+                    Дневная акция с понедельника по пятницу
+                </div>
+                
+                <div class="promotion-prices">
+                    <div class="price-item">
+                        <span class="price-time">15 мин</span>
+                        <span class="price-amount">= 30 мин</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-time">30 мин</span>
+                        <span class="price-amount">= 60 мин</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция с иконками -->
+    <section class="icons-section">
+        <div class="icons-grid">
+            <div class="icon-item">
+                <div class="icon-circle">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <div class="icon-text">Акции действуют в указанные дни</div>
+            </div>
+            
+            <div class="icon-item">
+                <div class="icon-circle">
+                    <i class="fas fa-id-card"></i>
+                </div>
+                <div class="icon-text">Документ, подтверждающий возраст</div>
+            </div>
+            
+            <div class="icon-item">
+                <div class="icon-circle">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <div class="icon-text">Вес родителя до 80 кг</div>
+            </div>
+            
+            <div class="icon-item">
+                <div class="icon-circle">
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="icon-text">Акции не суммируются</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Кнопка записи -->
+    <section class="booking-section">
+        <button class="booking-button" onclick="openBookingModal()">
+            ЗАБРОНИРОВАТЬ ПО АКЦИИ
+        </button>
+    </section>
+
+    <!-- Подвал -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-contact">
+                    <h3 class="footer-contact-title">КОНТАКТЫ</h3>
+                    <p class="footer-contact-description">Принимаем заявки на прокат по акционным ценам.</p>
+                    
+                    <p class="footer-contact-subtitle">Прокат POL PROKAT в городе Полевской</p>
+                    
+                    <div class="address-block">
+                        <p class="address-text">АДРЕС ПРОКАТА: УЛ. ЛЕНИНА, 19, ПОЛЕВСКОЙ</p>
+                        <p class="address-text">ТЕЛЕФОН: +7 (495) 805-40-54</p>
+                    </div>
+                    
+                    <div class="address-block">
+                        <p class="address-text">АДРЕС ПРОКАТА: УЛ. КОММУНИСТИЧЕСКАЯ, 29, ПОЛЕВСКОЙ</p>
+                        <p class="address-text">ТЕЛЕФОН: +7 (495) 805-18-18</p>
+                    </div>
+                    
+                    <div class="work-hours">
+                        <h3 class="footer-contact-subtitle">ЧАСЫ РАБОТЫ:</h3>
+                        <table class="work-hours-table">
+                            <tr>
+                                <td>ПН-ПТ:</td>
+                                <td>10:00-19:00</td>
+                            </tr>
+                            <tr>
+                                <td>СБ:</td>
+                                <td>10:00-18:00</td>
+                            </tr>
+                            <tr>
+                                <td>ВС:</td>
+                                <td>11:00-16:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <!-- Социальные сети -->
+                    <div class="social-media">
+                        <h3 class="social-media-title">СВЯЗАТЬСЯ С НАМИ:</h3>
+                        <div class="social-icons">
+                            <a href="https://wa.me/79058054054" class="social-icon whatsapp" target="_blank" title="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://vk.com/polprokat" class="social-icon vk" target="_blank" title="ВКонтакте">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="https://t.me/polprokat96" class="social-icon telegram" target="_blank" title="Telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://www.instagram.com/polprokat?utm_medium=copy_link" class="social-icon instagram" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-map">
+                    <div class="footer-map-placeholder">
+                        <img src="images/map.jpg" alt="Карта местоположения сервиса POL PROKAT">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© POL PROKAT. Все права защищены.</p>
+                <p>Акции действительны при наличии свободных самокатов. Подробности уточняйте у администратора.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно бронирования -->
+    <div class="purchase-modal" id="bookingModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); z-index: 2000; align-items: center; justify-content: center; padding: 20px;">
+        <div class="purchase-modal-content" style="background: white; border-radius: 20px; max-width: 500px; width: 100%; position: relative; animation: modalAppear 0.4s ease-out;">
+            <div class="modal-header" style="padding: 25px 30px; background: #F26B36; border-radius: 20px 20px 0 0; color: white; display: flex; justify-content: space-between; align-items: center;">
+                <h2 class="modal-title" style="font-size: 24px; font-weight: bold;">БРОНИРОВАНИЕ ПО АКЦИИ</h2>
+                <button class="modal-close" onclick="closeBookingModal()" style="background: none; border: none; font-size: 28px; color: white; cursor: pointer; padding: 0; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.3s;">×</button>
+            </div>
+            <div class="modal-body" style="padding: 30px;">
+                <form id="bookingForm">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Выберите акцию:</label>
+                        <select id="bookingPromotion" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; margin-bottom: 15px;">
+                            <option value="">Выберите акцию</option>
+                            <option value="День дошкольника (вторник)">День дошкольника (вторник)</option>
+                            <option value="День школьника (четверг)">День школьника (четверг)</option>
+                            <option value="День родителя (среда)">День родителя (среда)</option>
+                            <option value="Удваиваем время (пн-пт 12:00-14:00)">Удваиваем время (пн-пт 12:00-14:00)</option>
+                        </select>
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Дата и время:</label>
+                        <input type="datetime-local" id="bookingDateTime" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Ваше имя:</label>
+                        <input type="text" id="bookingName" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Телефон:</label>
+                        <input type="tel" id="bookingPhone" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 25px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Количество самокатов:</label>
+                        <input type="number" id="bookingQuantity" min="1" value="1" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;">
+                        <p style="font-size: 14px; color: #666; margin-top: 5px;">Введите любое количество</p>
+                    </div>
+                    
+                    <div style="display: flex; gap: 15px;">
+                        <button type="button" onclick="closeBookingModal()" style="flex: 1; padding: 15px; background: #f5f5f5; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; transition: background-color 0.3s; font-size: 16px;">
+                            Отмена
+                        </button>
+                        <button type="submit" style="flex: 1; padding: 15px; background: #F26B36; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; transition: background-color 0.3s; font-size: 16px;">
+                            Забронировать
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // Мобильное меню
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+    const mobileNav = document.getElementById('mobileNav');
+
+    // Открытие меню
+    mobileMenuToggle.addEventListener('click', function() {
+        mobileNav.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Закрытие меню
+    mobileCloseBtn.addEventListener('click', function() {
+        mobileNav.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+
+    // Закрытие меню при клике на ссылку
+    document.querySelectorAll('.mobile-nav .nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+    });
+
+    // Модальное окно бронирования
+    function openBookingModal() {
+        // Устанавливаем дату на завтра в 12:00 по умолчанию
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        tomorrow.setHours(12, 0, 0, 0);
+        
+        // Форматируем дату для input datetime-local
+        const formattedDate = tomorrow.toISOString().slice(0, 16);
+        document.getElementById('bookingDateTime').value = formattedDate;
+        
+        document.getElementById('bookingModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeBookingModal() {
+        document.getElementById('bookingModal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+    
+    // Обработка формы бронирования
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const promotion = document.getElementById('bookingPromotion').value;
+        const dateTime = document.getElementById('bookingDateTime').value;
+        const name = document.getElementById('bookingName').value;
+        const phone = document.getElementById('bookingPhone').value;
+        const quantity = document.getElementById('bookingQuantity').value;
+        
+        // Проверяем количество самокатов
+        if (quantity < 1) {
+            alert('Пожалуйста, введите корректное количество самокатов (минимум 1)');
+            document.getElementById('bookingQuantity').focus();
+            return;
+        }
+        
+        // Форматируем дату для читаемого вида
+        const date = new Date(dateTime);
+        const formattedDate = date.toLocaleDateString('ru-RU', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+        
+        // Здесь обычно отправка данных на сервер
+        alert(`Спасибо, ${name}!\n\nВаша заявка на акцию "${promotion}" отправлена.\n\nДата и время: ${formattedDate}\nКоличество самокатов: ${quantity}\nТелефон: ${phone}\n\nМы свяжемся с вами для подтверждения бронирования.`);
+        
+        // Очищаем форму
+        document.getElementById('bookingForm').reset();
+        // Устанавливаем значение по умолчанию для количества
+        document.getElementById('bookingQuantity').value = 1;
+        closeBookingModal();
+    });
+
+    // Инициализация при загрузке
+    document.addEventListener('DOMContentLoaded', function() {
+        // Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Добавляем активный класс текущей странице в меню
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.mobile-nav .nav-link').forEach(link => {
+            const linkHref = link.getAttribute('href');
+            if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
+                link.style.fontWeight = 'bold';
+                link.style.color = '#fff';
+                link.style.backgroundColor = 'rgba(255,255,255,0.2)';
+                link.style.borderRadius = '5px';
+                link.style.paddingLeft = '15px';
+            }
+        });
+        
+        // Закрытие модального окна при клике на оверлей
+        document.getElementById('bookingModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeBookingModal();
+            }
+        });
+        
+        // Закрытие модального окна при нажатии ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeBookingModal();
+            }
+        });
+        
+        // Анимация карточек при скролле
+        const cards = document.querySelectorAll('.promotion-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        cards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+            observer.observe(card);
+        });
+        
+        // Подсветка текущего дня недели
+        highlightCurrentDay();
+    });
+    
+    // Подсветка текущего дня недели в акциях
+    function highlightCurrentDay() {
+        const days = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
+        const today = new Date().getDay();
+        const todayName = days[today];
+        
+        document.querySelectorAll('.promotion-day').forEach(dayElement => {
+            const dayText = dayElement.textContent.toLowerCase();
+            
+            // Проверяем соответствие дня недели
+            if ((dayText.includes('вторник') && todayName === 'вторник') ||
+                (dayText.includes('среду') && todayName === 'среда') ||
+                (dayText.includes('четверг') && todayName === 'четверг') ||
+                (dayText.includes('пн по пт') && ['понедельник', 'вторник', 'среда', 'четверг', 'пятница'].includes(todayName))) {
+                
+                // Добавляем иконку молнии для сегодняшнего дня
+                dayElement.innerHTML = dayElement.innerHTML + ' <i class="fas fa-bolt" style="color: #F26B36; margin-left: 5px;"></i>';
+                dayElement.style.color = '#F26B36';
+                dayElement.style.fontWeight = '900';
+            }
+        });
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Летний прокат - POL PROKAT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="images/logo1.png" alt="POL PROKAT" 
+                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjUwIiB2aWV3Qm94PSIwIDAgMTUwIDUwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8dGV4dCB4PSI3NSIgeT0iMjgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtd2VpZ2h0PSJib2xkIj5QT0wgUFJPS0FUPC90ZXh0Pgo8L3N2Zz4='; this.style.filter='none'"
+                         style="height: 50px;">
+                </a>
+            </div>
+
+            <nav class="desktop-nav">
+    <a href="index.html" class="nav-link">ГЛАВНАЯ</a>
+    <a href="magazin.html" class="nav-link">МАГАЗИН</a>
+    <a href="page1.html" class="nav-link">ЗИМНИЙ ПРОКАТ</a>
+    <a href="serves.html" class="nav-link">СЕРВИС</a>
+    <a href="abonements.html" class="nav-link">АБОНЕМЕНТЫ</a>
+    <a href="sale.html" class="nav-link">АКЦИИ</a>
+    <a href="#footer" class="nav-link">КОНТАКТЫ</a>
+</nav>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Мобильное меню -->
+        <nav class="mobile-nav" id="mobileNav">
+            <button class="mobile-close-btn" id="mobileCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="magazin.html" class="nav-link">Магазин</a>
+                <a href="page1.html" class="nav-link">Зимний прокат</a>
+                <a href="page.html" class="nav-link">Летний прокат</a>
+                <a href="serves.html" class="nav-link">Сервис</a>
+                <a href="sale.html" class="nav-link">Акции</a>
+                <a href="#footer" class="nav-link">Контакты</a>
+            <div class="mobile-phone">+7 (905) 805-40-54</div>
+        </nav>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="index.html">Главная</a> / <span>Летний прокат</span>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <div class="page-header">
+        <h1 class="page-title">ЛЕТНИЙ ПРОКАТ</h1>
+        <p class="page-subtitle">Электросамокаты, велосипеды, сапы, квадроциклы и другой инвентарь для активного летнего отдыха в Полевском</p>
+    </div>
+
+    <!-- Секция инвентаря -->
+    <section class="inventory-section" id="inventory">
+        <div class="inventory-filters">
+            <button class="filter-btn active" data-filter="all">Весь инвентарь</button>
+        </div>
+        
+        <div class="inventory-grid">
+            <!-- Электросамокаты -->
+            <div class="inventory-card" data-category="scooter">
+                <div class="card-image-container">
+                    <img src="images/scoot.png" alt="Электросамокаты">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">ЭЛЕКТРОСАМОКАТЫ</h3>
+                    <div class="card-price">от 400 ₽ <span>/ 30 мин</span></div>
+                    <div class="card-description">
+                        Идеальный выбор для коротких поездок и прогулок по городу
+                    </div>
+                    <div class="card-actions">
+                        <button class="card-button" onclick="openBooking('Электросамокаты')">ЗАБРОНИРОВАТЬ</button>
+                        <button class="card-button secondary" onclick="openPriceModal('scooter')">ПРАЙС-ЛИСТ</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Велосипеды -->
+            <div class="inventory-card" data-category="bike">
+                <div class="card-image-container">
+                    <img src="images/bic.png" alt="Велосипеды">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">ВЕЛОСИПЕДЫ</h3>
+                    <div class="card-price">от 300 ₽ <span>/ час</span></div>
+                    <div class="card-description">
+                        Городские, горные и электровелосипеды для любых маршрутов
+                    </div>
+                    <div class="card-actions">
+                        <button class="card-button" onclick="openBooking('Велосипеды')">ЗАБРОНИРОВАТЬ</button>
+                        <button class="card-button secondary" onclick="openPriceModal('bike')">ПРАЙС-ЛИСТ</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Электровелосипеды -->
+            <div class="inventory-card" data-category="bike">
+                <div class="card-image-container">
+                    <img src="images/elbic.png" alt="Электровелосипеды">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">ЭЛЕКТРОВЕЛОСИПЕДЫ</h3>
+                    <div class="card-price">от 700 ₽ <span>/ час</span></div>
+                    <div class="card-description">
+                        Мощная поддержка мотора для покорения любых маршрутов
+                    </div>
+                    <div class="card-actions">
+                        <button class="card-button" onclick="openBooking('Электровелосипеды')">ЗАБРОНИРОВАТЬ</button>
+                        <button class="card-button secondary" onclick="openPriceModal('ebike')">ПРАЙС-ЛИСТ</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Электроквадроциклы -->
+            <div class="inventory-card" data-category="scooter">
+                <div class="card-image-container">
+                    <img src="images/kvad.png" alt="Электроквадроциклы">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">ЭЛЕКТРОКВАДРОЦИКЛЫ</h3>
+                    <div class="card-price">от 400 ₽ <span>/ 15 мин</span></div>
+                    <div class="card-description">
+                        Шаг к большим приключениям! Безопасное управление для юных любителей приключений
+                    </div>
+                    <div class="card-actions">
+                        <button class="card-button" onclick="openBooking('Электроквадроциклы')">ЗАБРОНИРОВАТЬ</button>
+                        <button class="card-button secondary" onclick="openPriceModal('quad')">ПРАЙС-ЛИСТ</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Спортинвентарь и сапы -->
+            <div class="inventory-card" data-category="sport">
+                <div class="card-image-container">
+                    <img src="images/ball.png" alt="Спортинвентарь и сапы">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">СПОРТИНВЕНТАРЬ И САПЫ</h3>
+                    <div class="card-price">от 150 ₽ <span>/ час</span></div>
+                    <div class="card-description">
+                        Мячи, бадминтон, сапборды - всё для активного отдыха на природе
+                    </div>
+                    <div class="card-actions">
+                        <button class="card-button" onclick="openBooking('Спортинвентарь и сапы')">ЗАБРОНИРОВАТЬ</button>
+                        <button class="card-button secondary" onclick="openPriceModal('sport')">ПРАЙС-ЛИСТ</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Электромобили для детей -->
+            <div class="inventory-card" data-category="scooter">
+                <div class="card-image-container">
+                    <img src="images/car.png" alt="Электромобили">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">ЭЛЕКТРОМОБИЛИ ДЛЯ ДЕТЕЙ</h3>
+                    <div class="card-price">от 300 ₽ <span>/ 15 мин</span></div>
+                    <div class="card-description">
+                        Веселье без границ для маленьких исследователей
+                    </div>
+                    <div class="card-actions">
+                        <button class="card-button" onclick="openBooking('Электромобили')">ЗАБРОНИРОВАТЬ</button>
+                        <button class="card-button secondary" onclick="openPriceModal('car')">ПРАЙС-ЛИСТ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция преимуществ -->
+    <section class="benefits-section" id="benefits">
+        <h2 class="page-title" style="font-size: 32px; margin-bottom: 40px;">ПОЧЕМУ ВЫБИРАЮТ НАС</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="benefit-title">Безопасность</h3>
+                <p class="benefit-text">Весь инвентарь проходит регулярное техобслуживание и проверку</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="benefit-title">Скорость</h3>
+                <p class="benefit-text">Быстрое оформление заказа всего за 5 минут</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-percent"></i>
+                </div>
+                <h3 class="benefit-title">Выгода</h3>
+                <p class="benefit-text">Скидки при бронировании от 3 часов и абонементы</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3 class="benefit-title">Поддержка</h3>
+                <p class="benefit-text">Консультация и помощь 24/7 во время проката</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальные окна с ценами -->
+    
+    <!-- Модалка для электросамокатов -->
+    <div class="price-modal" id="priceModalScooter">
+        <div class="price-modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">ЭЛЕКТРОСАМОКАТЫ</h2>
+                <button class="modal-close" onclick="closePriceModal('scooter')">×</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description">
+                    Наши электросамокаты — идеальный выбор для коротких поездок, прогулок с друзьями или всей семьей. Легкие, компактные и удобные в использовании. У нас есть модели как для взрослых, так и для детей, а отсутствие ограниченных зон позволяет кататься по всему городу!
+                </p>
+                <p class="modal-description" style="font-weight: bold; color: #F26B36;">
+                    PolPROkat — ваш проводник в мир активного отдыха и спорта!
+                </p>
+                
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Время</th>
+                            <th>Будни</th>
+                            <th>Выходные</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>30 мин</td>
+                            <td>400 ₽</td>
+                            <td>500 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>1 час</td>
+                            <td>500 ₽</td>
+                            <td>600 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>12 часов</td>
+                            <td>1800 ₽</td>
+                            <td>2000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>24 часа</td>
+                            <td>2200 ₽</td>
+                            <td>2500 ₽</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td>Ночное катание</td>
+                            <td>1200 ₽<br><small>(с 20:00 до 12:00)</small></td>
+                            <td>1400 ₽<br><small>(с 20:00 до 10:00)</small></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+        <!-- Модалка для велосипедов -->
+    <div class="price-modal" id="priceModalBike">
+        <div class="price-modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">ВЕЛОСИПЕДЫ</h2>
+                <button class="modal-close" onclick="closePriceModal('bike')">×</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description">
+                    Наши велосипеды — идеальный выбор для активного отдыха на природе. У нас есть городские, горные и детские модели, подходящие для любого возраста и уровня подготовки. Катайся по парку, исследуй городские маршруты или отправляйся на загородную прогулку!
+                </p>
+                <p class="modal-description" style="font-weight: bold; color: #F26B36;">
+                    PolPROkat — ваш проводник в мир активного отдыха и спорта!
+                </p>
+                
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Время</th>
+                            <th>Будни</th>
+                            <th>Выходные</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 час</td>
+                            <td>300 ₽</td>
+                            <td>400 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>12 часов</td>
+                            <td>1500 ₽</td>
+                            <td>1800 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>24 часа</td>
+                            <td>1800 ₽</td>
+                            <td>2200 ₽</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td>Ночное катание</td>
+                            <td>900 ₽<br><small>(с 20:00 до 12:00)</small></td>
+                            <td>1100 ₽<br><small>(с 20:00 до 10:00)</small></td>
+                        </tr>
+                        <tr class="section-title">
+                            <td colspan="3">ДЕТСКИЕ ВЕЛОСИПЕДЫ</td>
+                        </tr>
+                        <tr>
+                            <td>1 час</td>
+                            <td>200 ₽</td>
+                            <td>250 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>12 часов</td>
+                            <td>800 ₽</td>
+                            <td>1000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>24 часа</td>
+                            <td>1000 ₽</td>
+                            <td>1200 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Модалка для электровелосипедов -->
+    <div class="price-modal" id="priceModalEbike">
+        <div class="price-modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">ЭЛЕКТРОВЕЛОСИПЕДЫ</h2>
+                <button class="modal-close" onclick="closePriceModal('ebike')">×</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description">
+                    С нашими электровелосипедами ты сможешь покорять любые маршруты. Легкое управление как у обычного велосипеда, без курка газа, но с мощной поддержкой мотора. Неповторимые ощущения от каждой поездки!
+                </p>
+                <p class="modal-description" style="font-weight: bold; color: #F26B36;">
+                    PolPROkat — ваш проводник в мир активного отдыха и спорта!
+                </p>
+                
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Время</th>
+                            <th>Будни</th>
+                            <th>Выходные</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 час</td>
+                            <td>700 ₽</td>
+                            <td>800 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>12 часов</td>
+                            <td>2200 ₽</td>
+                            <td>2500 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>24 часа</td>
+                            <td>2700 ₽</td>
+                            <td>3000 ₽</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td>Ночное катание</td>
+                            <td>1600 ₽<br><small>(с 20:00 до 12:00)</small></td>
+                            <td>1800 ₽<br><small>(с 20:00 до 10:00)</small></td>
+                        </tr>
+                        <tr class="section-title">
+                            <td colspan="3">ДЕТСКИЕ КРЕСЛА</td>
+                        </tr>
+                        <tr>
+                            <td>1 час</td>
+                            <td>150 ₽</td>
+                            <td>200 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>12 часов</td>
+                            <td>300 ₽</td>
+                            <td>350 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>24 часа</td>
+                            <td>400 ₽</td>
+                            <td>450 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Модалка для электроквадроциклов -->
+    <div class="price-modal" id="priceModalQuad">
+        <div class="price-modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">ЭЛЕКТРОКВАДРОЦИКЛЫ</h2>
+                <button class="modal-close" onclick="closePriceModal('quad')">×</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description">
+                    Детские электроквадроциклы — шаг к большим приключениям! Наши электроквадроциклы — это идеальный переход от детских машинок к более серьезным видам транспорта. Безопасное управление, ограничение скорости и возможность покорять небольшое бездорожье делают их отличным выбором для юных любителей приключений!
+                </p>
+                <p class="modal-description" style="font-weight: bold; color: #F26B36;">
+                    PolPROkat — ваш проводник в мир активного отдыха и спорта!
+                </p>
+                
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Время</th>
+                            <th>Будни</th>
+                            <th>Выходные</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15 минут</td>
+                            <td>400 ₽</td>
+                            <td>500 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>30 минут</td>
+                            <td>700 ₽</td>
+                            <td>800 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Модалка для спортинвентаря и сапов -->
+    <div class="price-modal" id="priceModalSport">
+        <div class="price-modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">СПОРТИНВЕНТАРЬ И САПЫ</h2>
+                <button class="modal-close" onclick="closePriceModal('sport')">×</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description">
+                    Открой для себя мир сапбординга! Сапбординг — это твой путь к гармонии с природой. Наши сапборды подарят тебе незабываемые впечатления от гребли по спокойной воде или сплаву по реке.
+                </p>
+                <p class="modal-description">
+                    Спортинвентарь для веселых игр на природе! Наши мячи и наборы для бадминтона — это идеальный выбор для активного отдыха на свежем воздухе.
+                </p>
+                <p class="modal-description" style="font-weight: bold; color: #F26B36;">
+                    PolPROkat — ваш проводник в мир активного отдыха и спорта!
+                </p>
+                
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Сапы</th>
+                        </tr>
+                        <tr>
+                            <th>Время</th>
+                            <th>Будни</th>
+                            <th>Выходные</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12 часов</td>
+                            <td>1200 ₽</td>
+                            <td>1400 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>24 часа</td>
+                            <td>1400 ₽</td>
+                            <td>1600 ₽</td>
+                        </tr>
+                        <tr class="section-title">
+                            <td colspan="3">Спорт инвентарь / Детские кресла</td>
+                        </tr>
+                        <tr>
+                            <td>1 час</td>
+                            <td>150 ₽</td>
+                            <td>200 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>12 часов</td>
+                            <td>300 ₽</td>
+                            <td>350 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>24 часа</td>
+                            <td>400 ₽</td>
+                            <td>450 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Модалка для электромобилей -->
+    <div class="price-modal" id="priceModalCar">
+        <div class="price-modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">ЭЛЕКТРОМОБИЛИ ДЛЯ ДЕТЕЙ</h2>
+                <button class="modal-close" onclick="closePriceModal('car')">×</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description">
+                    Электромобили для детей — веселье без границ! Наши электромобили — это идеальный выбор для маленьких исследователей. Только у нас можно свободно передвигаться по всему парку, а с абонементами вы получаете максимальную выгоду!
+                </p>
+                <p class="modal-description" style="font-weight: bold; color: #F26B36;">
+                    PolPROkat — ваш проводник в мир активного отдыха и спорта!
+                </p>
+                
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Время</th>
+                            <th>Будни</th>
+                            <th>Выходные</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15 минут</td>
+                            <td>300 ₽</td>
+                            <td>400 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>30 минут</td>
+                            <td>500 ₽</td>
+                            <td>600 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-contact">
+                    <h3 class="footer-contact-title">КОНТАКТНЫЕ ДАННЫЕ</h3>
+                    <p class="footer-contact-description">Мы всегда на связи, чтобы ответить на ваши вопросы и помочь с бронированием.</p>
+                    
+                    <p class="footer-contact-subtitle">Прокат электросамокатов, велосипедов и сапов в городе Полевской</p>
+                    
+                    <div class="address-block">
+                        <p class="address-text">АДРЕС УЛ. ЛЕНИНА, 19, ПОЛЕВСКОЙ</p>
+                        <p class="address-text">ТЕЛЕФОН: +7 (495) 805-40-54</p>
+                    </div>
+                    
+                    <div class="address-block">
+                        <p class="address-text">АДРЕС УЛ. КОММУНИСТИЧЕСКАЯ, 29, ПОЛЕВСКОЙ</p>
+                        <p class="address-text">ТЕЛЕФОН: +7 (495) 805-18-18</p>
+                    </div>
+                    
+                    <div class="address-block">
+                        <p class="address-text">АДРЕС УЛ. ПАРК КУЛЬТУРЫ И ОТДЫХА, ПОЛЕВСКОЙ</p>
+                        <p class="address-text">ТЕЛЕФОН: +7 (950) 550-40-54</p>
+                    </div>
+                    
+                    <div class="work-hours">
+                        <h3 class="footer-contact-subtitle">ЧАСЫ РАБОТЫ ЛЕТНЕГО ПРОКАТА:</h3>
+                        <table class="work-hours-table">
+                            <tr>
+                                <td>ПН-ЧТ:</td>
+                                <td>12:00-21:00</td>
+                            </tr>
+                            <tr>
+                                <td>ПТ:</td>
+                                <td>12:00-22:00</td>
+                            </tr>
+                            <tr>
+                                <td>СБ-ВС:</td>
+                                <td>10:00-22:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <!-- Социальные сети -->
+                    <div class="social-media">
+                        <h3 class="social-media-title">МЫ В СОЦСЕТЯХ:</h3>
+                        <div class="social-icons">
+                            <a href="https://wa.me/79058054054" class="social-icon whatsapp" target="_blank" title="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://vk.com/polprokat" class="social-icon vk" target="_blank" title="ВКонтакте">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="https://t.me/polprokat96" class="social-icon telegram" target="_blank" title="Telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://www.instagram.com/polprokat?utm_medium=copy_link" class="social-icon instagram" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-map">
+                    <div class="footer-map-placeholder">
+                        <img src="images/map.jpg" alt="Карта местоположения POL PROKAT">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© POL PROKAT. Все права защищены.</p>
+                <p>Первый в Полевском прокат для яркого и активного отдыха</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно бронирования -->
+    <div class="price-modal" id="bookingModal">
+        <div class="price-modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="bookingTitle">БРОНИРОВАНИЕ</h2>
+                <button class="modal-close" onclick="closeBooking()">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Выбранный инвентарь:</label>
+                        <input type="text" id="bookingItem" readonly style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9; font-weight: bold; color: #F26B36;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Ваше имя:</label>
+                        <input type="text" id="bookingName" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Телефон:</label>
+                        <input type="tel" id="bookingPhone" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Дата и время:</label>
+                        <input type="datetime-local" id="bookingDateTime" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 25px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Дополнительная информация:</label>
+                        <textarea id="bookingMessage" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; min-height: 100px;" placeholder="Укажите желаемую модель, длительность проката и другую важную информацию"></textarea>
+                    </div>
+                    
+                    <div style="display: flex; gap: 15px;">
+                        <button type="button" onclick="closeBooking()" style="flex: 1; padding: 15px; background: #f5f5f5; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: background-color 0.3s;">
+                            Отмена
+                        </button>
+                        <button type="submit" style="flex: 1; padding: 15px; background: #F26B36; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: background-color 0.3s;">
+                            Отправить заявку
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // Мобильное меню
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+    const mobileNav = document.getElementById('mobileNav');
+
+    // Открытие меню
+    mobileMenuToggle.addEventListener('click', function() {
+        mobileNav.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Закрытие меню
+    mobileCloseBtn.addEventListener('click', function() {
+        mobileNav.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+
+    // Закрытие меню при клике на ссылку
+    document.querySelectorAll('.mobile-nav .nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+    });
+
+    // Фильтрация инвентаря
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Убираем активный класс у всех кнопок
+            document.querySelectorAll('.filter-btn').forEach(b => {
+                b.classList.remove('active');
+            });
+            // Добавляем активный класс текущей кнопке
+            this.classList.add('active');
+            
+            const filter = this.getAttribute('data-filter');
+            const cards = document.querySelectorAll('.inventory-card');
+            
+            cards.forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Функции для работы с модальными окнами цен
+    function openPriceModal(type) {
+        closeAllModals();
+        document.getElementById(`priceModal${capitalizeFirstLetter(type)}`).classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closePriceModal(type) {
+        document.getElementById(`priceModal${capitalizeFirstLetter(type)}`).classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+    
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+    
+    function closeAllModals() {
+        document.querySelectorAll('.price-modal').forEach(modal => {
+            modal.classList.remove('active');
+        });
+    }
+
+    // Закрытие модальных окон при клике на оверлей
+    document.querySelectorAll('.price-modal').forEach(modal => {
+        modal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    });
+
+    // Функция открытия модального окна бронирования
+    function openBooking(itemName) {
+        closeAllModals();
+        document.getElementById('bookingItem').value = itemName;
+        document.getElementById('bookingTitle').textContent = 'БРОНИРОВАНИЕ: ' + itemName;
+        document.getElementById('bookingModal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Функция закрытия модального окна бронирования
+    function closeBooking() {
+        document.getElementById('bookingModal').classList.remove('active');
+        document.getElementById('bookingForm').reset();
+        document.body.style.overflow = 'auto';
+    }
+
+    // Обработка формы бронирования
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const item = document.getElementById('bookingItem').value;
+        const name = document.getElementById('bookingName').value;
+        const phone = document.getElementById('bookingPhone').value;
+        const dateTime = document.getElementById('bookingDateTime').value;
+        const message = document.getElementById('bookingMessage').value;
+        
+        alert(`Спасибо, ${name}!\n\nВаша заявка на бронирование ${item} отправлена.\nДата и время: ${dateTime}\nТелефон: ${phone}\n\nМы свяжемся с вами в ближайшее время для подтверждения.`);
+        
+        closeBooking();
+    });
+
+    // Выравнивание высоты карточек
+    function equalizeCardHeights() {
+        if (window.innerWidth > 768) {
+            const cards = document.querySelectorAll('.inventory-card');
+            let maxHeight = 0;
+            
+            // Сначала сбрасываем высоту
+            cards.forEach(card => {
+                card.style.height = 'auto';
+            });
+            
+            // Находим максимальную высоту
+            cards.forEach(card => {
+                const height = card.offsetHeight;
+                if (height > maxHeight) maxHeight = height;
+            });
+            
+            // Устанавливаем одинаковую высоту
+            cards.forEach(card => {
+                card.style.height = maxHeight + 'px';
+            });
+        } else {
+            // На мобильных устройствах сбрасываем высоту
+            const cards = document.querySelectorAll('.inventory-card');
+            cards.forEach(card => {
+                card.style.height = 'auto';
+            });
+        }
+    }
+
+    // Запускаем после загрузки и при изменении размера
+    window.addEventListener('load', equalizeCardHeights);
+    window.addEventListener('resize', function() {
+        clearTimeout(window.resizeTimer);
+        window.resizeTimer = setTimeout(equalizeCardHeights, 250);
+    });
+
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // Закрытие модальных окон при нажатии ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeAllModals();
+            closeBooking();
+            document.body.style.overflow = 'auto';
+        }
+    });
+    </script>
+</body>
+</html>

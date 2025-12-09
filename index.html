@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POL PROKAT - Прокат инвентаря</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Оверлей для мобильного меню -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    
+    <!-- Шапка сайта -->
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="images/logo1.png" alt="POL PROKAT" 
+                     onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjUwIiB2aWV3Qm94PSIwIDAgMTUwIDUwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8dGV4dCB4PSI3NSIgeT0iMjgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtd2VpZ2h0PSJib2xkIj5QT0wgUFJPS0FUPC90ZXh0Pgo8L3N2Zz4='; this.style.filter='none'"
+                     style="height: 50px;">
+            </div>
+            
+        <nav class="desktop-nav">
+    <a href="#services" class="nav-link">ЛЕТНИЙ ПРОКАТ</a>
+    <a href="#services" class="nav-link">ЗИМНИЙ ПРОКАТ</a>
+    <a href="#services" class="nav-link">СЕРВИС</a>
+    <a href="#services" class="nav-link">МАГАЗИН</a>
+    <a href="#services" class="nav-link">АБОНЕМЕНТЫ</a>
+    <a href="#services" class="nav-link">АКЦИИ</a>
+    <a href="#footer-contacts" class="nav-link">КОНТАКТЫ</a>
+</nav>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Мобильное меню -->
+        <nav class="mobile-nav" id="mobileNav">
+            <button class="mobile-close-btn" id="mobileCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+            <a href="#services" class="nav-link">Прокат</a>
+            <a href="#services" class="nav-link">Абонементы</a>
+            <a href="#services" class="nav-link">Сервис</a>
+            <a href="#services" class="nav-link">Магазин</a>
+            <a href="#services" class="nav-link">Акции</a>
+            <a href="#reviews" class="nav-link">Отзывы</a>
+            <a href="#contact-form" class="nav-link">Свяжитесь с нами</a>
+            <a href="#footer-contacts" class="nav-link">Контакты</a>
+            <a href="#footer" class="nav-link">О нас</a>
+            <div class="mobile-phone">+7 (905) 805-40-54</div>
+        </nav>
+    </header>
+
+    <!-- Секция приветствия -->
+    <section class="welcome-section">
+        <div class="welcome-card">
+            <h2 class="welcome-title">POL PROKAT</h2>
+            <p class="welcome-text">Добро пожаловать в PolPROkat — первый в Полевском прокат для яркого и активного отдыха!</p>
+            <p class="welcome-text">У нас есть всё для незабываемого приключения: от модных электросамокатов и велосипедов, до мощных электроснегокатов и веселых тюбингов. Мы верим, что отличные эмоции должны быть доступны каждому, и делаем прокат простым и удобным.</p>
+            <p class="welcome-text">Чтобы начать кататься, просто возьмите с собой паспорт или водительское удостоверение для заключения договора.</p>
+            <p class="welcome-text">Приходите и откройте для себя город и его окрестности с новой стороны — ваше идеальное развлечение ждет вас!</p>
+        </div>
+        
+        <!-- Галерея фото -->
+        <div class="photo-gallery">
+            <h3 class="gallery-title">Точки проката</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/pic1.jpg" alt="Электросамокаты POL PROKAT">
+                    <div class="gallery-caption">Электросамокаты</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pic2.jpg" alt="Зимний прокат тюбингов">
+                    <div class="gallery-caption">Зимние развлечения</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pic3.jpg" alt="Велосипеды для активного отдыха">
+                    <div class="gallery-caption">Велосипеды для всей семьи</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+    </section>
+
+    <!-- Секция услуг -->
+    <section class="services-section" id="services">
+        <h2 class="section-title">Наши услуги</h2>
+        
+        <!-- Первый ряд услуг -->
+        <div class="services-grid">
+            <!-- Летний прокат -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/l.png" alt="Летний прокат">
+                </div>
+                <div class="service-content">
+                    <h3 class="service-name">ЛЕТНИЙ ПРОКАТ</h3>
+                    <div class="service-price">от 300 ₽</div>
+                    <p class="service-description">Электросамокаты, велосипеды и сапы для активного летнего отдыха.</p>
+                    <a href="page.html" class="service-button">ПРОКАТИСЬ</a>
+                </div>
+            </div>
+            
+            <!-- Сервис -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/s.png" alt="Сервис">
+                </div>
+                <div class="service-content">
+                    <h3 class="service-name">СЕРВИС</h3>
+                    <div class="service-price">от 300 ₽</div>
+                    <p class="service-description">Качественный ремонт спортивного инвентаря и консультации специалистов.</p>
+                    <a href="serves.html" class="service-button">ПОЧИНИ</a>
+                </div>
+            </div>
+            
+            <!-- Зимний прокат -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/z.png" alt="Зимний прокат">
+                </div>
+                <div class="service-content">
+                    <h3 class="service-name">ЗИМНИЙ ПРОКАТ</h3>
+                    <div class="service-price">от 100 ₽</div>
+                    <p class="service-description">Тюбинги, санки и снаряжение для веселых зимних развлечений на природе.</p>
+                    <a href="page1.html" class="service-button">ПРОКАТИСЬ</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Второй ряд услуг -->
+        <div class="services-grid">
+            <!-- Магазин -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/m.png" alt="Магазин">
+                </div>
+                <div class="service-content">
+                    <h3 class="service-name">МАГАЗИН</h3>
+                    <div class="service-price">от 300 ₽</div>
+                    <p class="service-description">Спортивная одежда, защита и аксессуары для комфортного активного отдыха.  </p>
+                    <a href="magazin.html" class="service-button">СКОРО ОТКРЫТИЕ!</a>
+                </div>
+            </div>
+            
+            <!-- Абонемент -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/ab.png" alt="Абонемент">
+                </div>
+                <div class="service-content">
+                    <h3 class="service-name">АБОНЕМЕНТ</h3>
+                    <div class="service-price">от 1500 ₽</div>
+                    <p class="service-description">Выгодные условия для постоянных клиентов и регулярных спортивных занятий.  </p>
+                    <a href="abonements.html" class="service-button">ПОДАРИ</a>
+                </div>
+            </div>
+            
+            <!-- Акции -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/a.png" alt="Акции">
+                </div>
+                <div class="service-content">
+                    <h3 class="service-name">АКЦИИ</h3>
+                    <div class="service-price">от 200 ₽</div>
+                    <p class="service-description">Специальные предложения, скидки и бонусы на все услуги нашего проката.  </p>
+                    <a href="sale.html" class="service-button">УСПЕВАЙ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция отзывов -->
+    <section class="reviews-section" id="reviews">
+        <h2 class="section-title">Отзывы наших клиентов</h2>
+        <div class="reviews-grid">
+            <!-- Отзыв 1 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">А</div>
+                    <div>
+                        <div class="review-name">Анна Смирнова</div>
+                        <div class="review-date">15 мая 2023</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Отличный сервис! Взяли электросамокаты на выходные, все было организовано быстро и без проблем. Инвентарь в отличном состоянии, заряда хватило на все наши поездки. Обязательно вернемся!
+                </div>
+                <div class="review-rating">★★★★★</div>
+            </div>
+            
+            <!-- Отзыв 2 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">Д</div>
+                    <div>
+                        <div class="review-name">Дмитрий Ковалев</div>
+                        <div class="review-date">22 марта 2023</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Ребята, вы лучшие в Полевском! Взяли велосипеды для всей семьи, подобрали подходящие модели, все отрегулировали. Дети в восторге, теперь каждые выходные просят прокатиться. Спасибо за отличные эмоции!
+                </div>
+                <div class="review-rating">★★★★★</div>
+            </div>
+            
+            <!-- Отзыв 3 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">Е</div>
+                    <div>
+                        <div class="review-name">Екатерина Васнецова</div>
+                        <div class="review-date">10 января 2023</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Зимой взяли тюбинги - невероятные ощущения! Все организовано безопасно, инструктаж провели, помогли с выбором подходящих склонов. Отдельное спасибо за теплый чай после катания. Рекомендую всем!
+                </div>
+                <div class="review-rating">★★★★★</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция контактов -->
+    <section class="contact-section" id="contact-form">
+        <h2 class="section-title">Свяжитесь с нами</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Услуга</label>
+                        <select id="service" name="service">
+                            <option value="">Выберите услугу</option>
+                            <option value="summer">Летний прокат</option>
+                            <option value="winter">Зимний прокат</option>
+                            <option value="service">Сервис</option>
+                            <option value="shop">Магазин</option>
+                            <option value="subscription">Абонемент</option>
+                            <option value="promo">Акции</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">ОТПРАВИТЬ</button>
+                </form>
+            </div>
+            
+            <div class="contact-logo">
+                <img src="images/logo.jpg" alt="POL PROKAT">
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-contact" id="footer-contacts">
+                    <h3 class="footer-contact-title">КОНТАКТНЫЕ ДАННЫЕ</h3>
+                    <p class="footer-contact-description">Мы всегда на связи, чтобы ответить на ваши вопросы и помочь с бронированием.</p>
+                    
+                    <p class="footer-contact-subtitle">Прокат электросамокатов, велосипедов и сапов в городе Полевской</p>
+                    
+                    <div class="address-block">
+                        <p class="address-text">АДРЕС УЛ. ЛЕНИНА, 19, ПОЛЕВСКОЙ</p>
+                        <p class="address-text">ТЕЛЕФОН: +7 (495) 805-40-54</p>
+                    </div>
+                    
+                    <div class="address-block">
+                        <p class="address-text">АДРЕС УЛ. КОММУНИСТИЧЕСКАЯ, 29, ПОЛЕВСКОЙ</p>
+                        <p class="address-text">ТЕЛЕФОН: +7 (495) 805-18-18</p>
+                    </div>
+                    
+                    <div class="address-block">
+                        <p class="address-text">АДРЕС УЛ. ПАРК КУЛЬТУРЫ И ОТДЫХА, ПОЛЕВСКОЙ</p>
+                        <p class="address-text">ТЕЛЕФОН: +7 (950) 550-40-54</p>
+                    </div>
+                    
+                    <div class="work-hours">
+                        <h3 class="footer-contact-subtitle">ЧАСЫ РАБОТЫ:</h3>
+                        <table class="work-hours-table">
+                            <tr>
+                                <td>ПН-ЧТ:</td>
+                                <td>12:00-21:00</td>
+                            </tr>
+                            <tr>
+                                <td>ПТ:</td>
+                                <td>12:00-22:00</td>
+                            </tr>
+                            <tr>
+                                <td>СБ-ВС:</td>
+                                <td>10:00-22:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <!-- Социальные сети -->
+                    <div class="social-media">
+                        <h3 class="social-media-title">МЫ В СОЦСЕТЯХ:</h3>
+                        <div class="social-icons">
+                            <a href="https://wa.me/79058054054" class="social-icon whatsapp" target="_blank" title="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://vk.com/polprokat" class="social-icon vk" target="_blank" title="ВКонтакте">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="https://t.me/polprokat96" class="social-icon telegram" target="_blank" title="Telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://www.instagram.com/polprokat?utm_medium=copy_link" class="social-icon instagram" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-map">
+                    <div class="footer-map-placeholder">
+                        <img src="images/map.jpg" alt="Карта местоположения POL PROKAT">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© POL PROKAT. Все права защищены.</p>
+                <p>Первый в Полевском прокат для яркого и активного отдыха</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Мобильное меню
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+
+    // Открытие меню
+    mobileMenuToggle.addEventListener('click', function() {
+        mobileNav.classList.add('active');
+        if (mobileNavOverlay) mobileNavOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Закрытие меню
+    mobileCloseBtn.addEventListener('click', function() {
+        mobileNav.classList.remove('active');
+        if (mobileNavOverlay) mobileNavOverlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+
+    // Закрытие меню при клике на оверлей
+    if (mobileNavOverlay) {
+        mobileNavOverlay.addEventListener('click', function() {
+            mobileNav.classList.remove('active');
+            mobileNavOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+    }
+    
+    // Закрытие меню при клике на ссылку
+    document.querySelectorAll('.mobile-nav .nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            mobileNav.classList.remove('active');
+            if (mobileNavOverlay) mobileNavOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+    });
+    
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                if (mobileNav.classList.contains('active')) {
+                    mobileNav.classList.remove('active');
+                    if (mobileNavOverlay) mobileNavOverlay.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // Обработка формы
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const service = document.getElementById('service').value;
+        
+        alert(`Спасибо, ${name}! Ваша заявка на услугу "${service}" отправлена. Мы свяжемся с вами по телефону ${phone} в ближайшее время.`);
+        
+        this.reset();
+    });
+    
+    // Обработка кнопок услуг
+    document.querySelectorAll('.service-button').forEach(button => {
+        button.addEventListener('click', function() {
+            const serviceName = this.getAttribute('data-service');
+            
+            const contactForm = document.getElementById('contact-form');
+            window.scrollTo({
+                top: contactForm.offsetTop - 80,
+                behavior: 'smooth'
+            });
+            
+            setTimeout(() => {
+                const serviceSelect = document.getElementById('service');
+                let optionValue = '';
+                
+                switch(serviceName) {
+                    case 'Летний прокат': optionValue = 'summer'; break;
+                    case 'Зимний прокат': optionValue = 'winter'; break;
+                    case 'Сервис': optionValue = 'service'; break;
+                    case 'Магазин': optionValue = 'shop'; break;
+                    case 'Абонемент': optionValue = 'subscription'; break;
+                    case 'Акции': optionValue = 'promo'; break;
+                }
+                
+                if (optionValue) {
+                    serviceSelect.value = optionValue;
+                }
+                
+                document.getElementById('name').focus();
+            }, 500);
+        });
+    });
+    
+    // Обработка ошибок изображений
+    document.addEventListener('DOMContentLoaded', function() {
+        const serviceImages = document.querySelectorAll('.service-image img');
+        
+        serviceImages.forEach(img => {
+            img.onerror = function() {
+                this.style.display = 'none';
+                const fallback = document.createElement('div');
+                fallback.style.width = '100%';
+                fallback.style.height = '100%';
+                fallback.style.backgroundColor = '#F26B36';
+                fallback.style.display = 'flex';
+                fallback.style.alignItems = 'center';
+                fallback.style.justifyContent = 'center';
+                fallback.style.color = 'white';
+                fallback.style.fontWeight = 'bold';
+                fallback.style.fontSize = '20px';
+                fallback.textContent = this.alt || 'Услуга';
+                this.parentElement.appendChild(fallback);
+            };
+        });
+    });
+    
+// Функция для выравнивания высоты карточек услуг
+function equalizeServiceCards() {
+    // Для десктопа (3 колонки)
+    if (window.innerWidth > 992) {
+        const rows = document.querySelectorAll('.services-grid');
+        
+        rows.forEach(row => {
+            const cards = row.querySelectorAll('.service-card');
+            let maxHeight = 0;
+            
+            // Сначала устанавливаем auto высоту для расчета
+            cards.forEach(card => {
+                card.style.height = 'auto';
+            });
+            
+            // Находим максимальную высоту
+            cards.forEach(card => {
+                const height = card.offsetHeight;
+                if (height > maxHeight) maxHeight = height;
+            });
+            
+            // Устанавливаем одинаковую высоту для всех карточек
+            cards.forEach(card => {
+                card.style.height = maxHeight + 'px';
+            });
+        });
+    } else {
+        // На мобильных и планшетах сбрасываем высоту
+        const cards = document.querySelectorAll('.service-card');
+        cards.forEach(card => {
+            card.style.height = 'auto';
+        });
+    }
+}
+    
+    // Вызываем после полной загрузки
+    window.addEventListener('load', function() {
+        setTimeout(equalizeServiceCards, 100);
+        setTimeout(equalizeServiceCards, 500);
+    });
+    
+    // При изменении размера окна
+    window.addEventListener('resize', function() {
+        clearTimeout(window.resizeTimer);
+        window.resizeTimer = setTimeout(function() {
+            equalizeServiceCards();
+        }, 250);
+    });
+    
+    // Принудительная установка фиксированных высот для мобильных устройств
+    function forceFixedHeights() {
+        if (window.innerWidth <= 992) {
+            const serviceCards = document.querySelectorAll('.service-card');
+            const serviceButtons = document.querySelectorAll('.service-button');
+            
+            // Устанавливаем фиксированные высоты для кнопок
+            serviceButtons.forEach(button => {
+                button.style.height = '46px';
+                button.style.minHeight = '46px';
+                button.style.maxHeight = '46px';
+                button.style.lineHeight = '46px';
+                button.style.padding = '0 20px';
+            });
+            
+            // Для очень маленьких экранов
+            if (window.innerWidth <= 480) {
+                serviceButtons.forEach(button => {
+                    button.style.height = '44px';
+                    button.style.minHeight = '44px';
+                    button.style.maxHeight = '44px';
+                    button.style.lineHeight = '44px';
+                });
+            }
+        }
+    }
+    
+    // Запускаем при загрузке и изменении размера
+    window.addEventListener('load', forceFixedHeights);
+    window.addEventListener('resize', forceFixedHeights);
+    </script>
+</body>
+</html>

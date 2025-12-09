@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин - POL PROKAT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="images/logo1.png" alt="POL PROKAT" 
+                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjUwIiB2aWV3Qm94PSIwIDAgMTUwIDUwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8dGV4dCB4PSI3NSIgeT0iMjgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtd2VpZ2h0PSJib2xkIj5QT0wgUFJPS0FUPC90ZXh0Pgo8L3N2Zz4='; this.style.filter='none'"
+                         style="height: 50px;">
+                </a>
+            </div>
+
+            <nav class="desktop-nav">
+    <a href="index.html" class="nav-link">ГЛАВНАЯ</a>
+    <a href="page.html" class="nav-link">ЛЕТНИЙ ПРОКАТ</a>
+    <a href="page1.html" class="nav-link">ЗИМНИЙ ПРОКАТ</a>
+    <a href="serves.html" class="nav-link">СЕРВИС</a>
+    <a href="abonements.html" class="nav-link">АБОНЕМЕНТЫ</a>
+    <a href="sale.html" class="nav-link">АКЦИИ</a>
+    <a href="#footer" class="nav-link">КОНТАКТЫ</a>
+</nav>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Мобильное меню -->
+        <nav class="mobile-nav" id="mobileNav">
+            <button class="mobile-close-btn" id="mobileCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="magazin.html" class="nav-link">Магазин</a>
+                <a href="page1.html" class="nav-link">Зимний прокат</a>
+                <a href="page.html" class="nav-link">Летний прокат</a>
+                <a href="serves.html" class="nav-link">Сервис</a>
+                <a href="sale.html" class="nav-link">Акции</a>
+                <a href="#footer" class="nav-link">Контакты</a>
+            <div class="mobile-phone">+7 (905) 805-40-54</div>
+        </nav>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="index.html">Главная</a> / <span>Магазин</span>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <div class="page-header">
+        <h1 class="page-title">МАГАЗИН</h1>
+        <p class="page-subtitle">Скоро откроем для вас мир новых возможностей и ярких впечатлений</p>
+    </div>
+
+    <!-- Основной контент -->
+    <section class="shop-section">
+        <!-- Сообщение о скором открытии -->
+        <div class="coming-soon fade-in">
+            <div class="coming-soon-icon">
+                <i class="fas fa-tools"></i>
+            </div>
+            <h2 class="coming-soon-title">СКОРО ОТКРЫТИЕ!</h2>
+            <p class="coming-soon-text">
+                Друзья, мы не стоим на месте и постоянно думаем, как сделать ваш досуг еще ярче. 
+                Поэтому наша команда уже работает над расширением ассортимента.
+            </p>
+            <p class="coming-soon-text">
+                Скоро в нашем парке появится <strong>новое, современное снаряжение</strong>, которое откроет для вас 
+                еще больше возможностей для активного отдыха и адреналина.
+            </p>
+            <p class="coming-soon-text">
+                Оставайтесь на связи, чтобы быть первыми, кто узнает о новинках! Подписывайтесь на наши 
+                социальные сети или следите за обновлениями на сайте.
+            </p>
+            <p class="signature">Ваш PolPROkat</p>
+        </div>
+
+        <!-- Призыв к подписке -->
+        <div class="social-call fade-in">
+            <h3>БУДЬТЕ ПЕРВЫМИ!</h3>
+            <p>Подписывайтесь на наши социальные сети, чтобы не пропустить новинки, специальные предложения и акции</p>
+            <div class="social-buttons">
+                <a href="https://wa.me/79058054054" class="social-btn whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://vk.com/polprokat" class="social-btn vk" target="_blank">
+                    <i class="fab fa-vk"></i> ВКонтакте
+                </a>
+                <a href="https://t.me/polprokat96" class="social-btn telegram" target="_blank">
+                    <i class="fab fa-telegram"></i> Telegram
+                </a>
+                <a href="https://www.instagram.com/polprokat?utm_medium=copy_link" class="social-btn instagram" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+
+        <!-- FAQ секция -->
+        <div class="faq-section fade-in">
+            <h2 class="section-title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Когда откроется магазин?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы планируем открытие интернет-магазина в ближайшие полгода. Следите за обновлениями в наших социальных сетях - там мы анонсируем точную дату запуска первыми!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Будут ли скидки при открытии?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да! Для наших первых покупателей мы приготовили специальные открыточные скидки, бонусы и подарки. Самые выгодные предложения получат подписчики наших социальных сетей.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Смогу ли я получить сервисное обслуживание?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, все товары, купленные в нашем магазине, будут обслуживаться в нашем сервисном центре. Для них действует гарантия и постгарантийное обслуживание.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Будут ли акции для клиентов проката?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Конечно! Наши постоянные клиенты проката получат специальные скидочные карты и бонусы при покупке в магазине. Чем чаще вы арендуете у нас технику - тем больше бонусов получаете.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-contact">
+                    <h3 class="footer-contact-title">КОНТАКТЫ</h3>
+                    <p class="footer-contact-description">Принимаем заявки на прокат и обслуживание велосипедов и электросамокатов.</p>
+                    
+                    <p class="footer-contact-subtitle">Сервисный центр POL PROKAT в городе Полевской</p>
+                    
+                    <div class="address-block">
+                        <p class="address-text">АДРЕС СЕРВИСА: УЛ. ЛЕНИНА, 19, ПОЛЕВСКОЙ</p>
+                        <p class="address-text">ТЕЛЕФОН СЕРВИСА: +7 (495) 805-40-54</p>
+                    </div>
+                    
+                    <div class="address-block">
+                        <p class="address-text">АДРЕС СЕРВИСА: УЛ. КОММУНИСТИЧЕСКАЯ, 29, ПОЛЕВСКОЙ</p>
+                        <p class="address-text">ТЕЛЕФОН СЕРВИСА: +7 (495) 805-18-18</p>
+                    </div>
+                    
+                    <div class="work-hours">
+                        <h3 class="footer-contact-subtitle">ЧАСЫ РАБОТЫ СЕРВИСА:</h3>
+                        <table class="work-hours-table">
+                            <tr>
+                                <td>ПН-ПТ:</td>
+                                <td>10:00-19:00</td>
+                            </tr>
+                            <tr>
+                                <td>СБ:</td>
+                                <td>10:00-18:00</td>
+                            </tr>
+                            <tr>
+                                <td>ВС:</td>
+                                <td>11:00-16:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <!-- Социальные сети -->
+                    <div class="social-media">
+                        <h3 class="social-media-title">СВЯЗАТЬСЯ С НАМИ:</h3>
+                        <div class="social-icons">
+                            <a href="https://wa.me/79058054054" class="social-icon whatsapp" target="_blank" title="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://vk.com/polprokat" class="social-icon vk" target="_blank" title="ВКонтакте">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="https://t.me/polprokat96" class="social-icon telegram" target="_blank" title="Telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://www.instagram.com/polprokat?utm_medium=copy_link" class="social-icon instagram" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-map">
+                    <div class="footer-map-placeholder">
+                        <img src="images/map.jpg" alt="Карта местоположения сервиса POL PROKAT">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© POL PROKAT. Все права защищены.</p>
+                <p>Профессиональный сервис по ремонту и обслуживанию велосипедов и электросамокатов</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Мобильное меню
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+    const mobileNav = document.getElementById('mobileNav');
+
+    // Открытие меню
+    mobileMenuToggle.addEventListener('click', function() {
+        mobileNav.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Закрытие меню
+    mobileCloseBtn.addEventListener('click', function() {
+        mobileNav.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+
+    // Закрытие меню при клике на ссылку
+    document.querySelectorAll('.mobile-nav .nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+    });
+
+    // FAQ аккордеон
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+                // Закрываем все остальные открытые вопросы
+                faqQuestions.forEach(otherQuestion => {
+                    if (otherQuestion !== question) {
+                        otherQuestion.classList.remove('active');
+                        otherQuestion.nextElementSibling.classList.remove('active');
+                    }
+                });
+                
+                // Открываем/закрываем текущий вопрос
+                this.classList.toggle('active');
+                const answer = this.nextElementSibling;
+                answer.classList.toggle('active');
+                
+                // Если ответ открывается, плавно прокручиваем к нему на мобильных
+                if (this.classList.contains('active') && window.innerWidth <= 768) {
+                    setTimeout(() => {
+                        this.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }, 300);
+                }
+            });
+        });
+        
+        // Анимация появления элементов при скролле
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInOnScroll = () => {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        // Начальные стили для анимации
+        fadeElements.forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        });
+        
+        // Запускаем анимацию при загрузке и скролле
+        window.addEventListener('load', fadeInOnScroll);
+        window.addEventListener('scroll', fadeInOnScroll);
+        
+        // Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Добавляем активный класс текущей странице в меню
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.mobile-nav .nav-link').forEach(link => {
+            const linkHref = link.getAttribute('href');
+            if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
+                link.style.fontWeight = 'bold';
+                link.style.color = '#fff';
+                link.style.backgroundColor = 'rgba(255,255,255,0.2)';
+                link.style.borderRadius = '5px';
+                link.style.paddingLeft = '15px';
+            }
+        });
+        
+        // Открываем первый FAQ по умолчанию на мобильных
+        if (window.innerWidth <= 768) {
+            const firstQuestion = document.querySelector('.faq-question');
+            if (firstQuestion) {
+                firstQuestion.classList.add('active');
+                firstQuestion.nextElementSibling.classList.add('active');
+            }
+        }
+    });
+    </script>
+</body>
+</html>

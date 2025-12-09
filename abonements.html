@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Абонементы - POL PROKAT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="images/logo1.png" alt="POL PROKAT" 
+                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjUwIiB2aWV3Qm94PSIwIDAgMTUwIDUwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8dGV4dCB4PSI3NSIgeT0iMjgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtd2VpZ2h0PSJib2xkIj5QT0wgUFJPS0FUPC90ZXh0Pgo8L3N2Zz4='; this.style.filter='none'"
+                         style="height: 50px;">
+                </a>
+            </div>
+
+            <nav class="desktop-nav">
+    <a href="index.html" class="nav-link">ГЛАВНАЯ</a>
+    <a href="page.html" class="nav-link">ЛЕТНИЙ ПРОКАТ</a>
+    <a href="page1.html" class="nav-link">ЗИМНИЙ ПРОКАТ</a>
+    <a href="serves.html" class="nav-link">СЕРВИС</a>
+    <a href="abonements.html" class="nav-link">МАГАЗИН</a>
+    <a href="sale.html" class="nav-link">АКЦИИ</a>
+    <a href="#footer" class="nav-link">КОНТАКТЫ</a>
+</nav>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Мобильное меню -->
+        <nav class="mobile-nav" id="mobileNav">
+            <button class="mobile-close-btn" id="mobileCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="magazin.html" class="nav-link">Магазин</a>
+                <a href="page.html" class="nav-link">Летний прокат</a>
+                <a href="page1.html" class="nav-link">Зимний прокат</a>
+                <a href="serves.html" class="nav-link">Сервис</a>
+                <a href="sale.html" class="nav-link">Акции</a>
+                <a href="#footer" class="nav-link">Контакты</a>
+            <div class="mobile-phone">+7 (905) 805-40-54</div>
+        </nav>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="index.html">Главная</a> / <span>Абонементы</span>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <div class="page-header">
+        <h1 class="page-title">АБОНЕМЕНТЫ</h1>
+        <p class="page-subtitle">Выгодные предложения для постоянных клиентов PolPROkat. Больше катаний - больше выгода!</p>
+    </div>
+
+    <!-- Секция электроснегокатов -->
+    <section class="subscription-section">
+        <h2 class="section-title">ЭЛЕКТРОСНЕГОКАТЫ</h2>
+        
+        <div class="winter-bg">
+            <div class="section-bg"></div>
+            <div class="snow-container" id="snowContainer1"></div>
+            
+            <div class="subscriptions-grid">
+                <!-- Электроснегокат 5 прокатов -->
+                <div class="subscription-card">
+                    <div class="subscription-header">
+                        <div class="subscription-count">5 ПРОКАТОВ</div>
+                        <div class="subscription-icon">
+                            <i class="fas fa-snowmobile"></i>
+                        </div>
+                        <h3 class="subscription-title">ЭЛЕКТРОСНЕГОКАТ</h3>
+                    </div>
+                    
+                    <div class="subscription-body">
+                        <div class="subscription-description">
+                            ПО 15 МИНУТ НА ЭЛЕКТРОСНЕГОКАТЕ
+                        </div>
+                        
+                        <div class="subscription-gift">
+                            <div class="gift-title">
+                                <i class="fas fa-gift"></i> БОНУС
+                            </div>
+                            <div class="gift-text">+1 ЧАС ТЮБИНГА в подарок</div>
+                        </div>
+                    </div>
+                    
+                    <div class="subscription-price">
+                        1500 <span class="price-unit">₽</span>
+                    </div>
+                    
+                    <button class="subscription-button" onclick="openPurchaseModal('Электроснегокат (5 прокатов)', 1500)">
+                        <i class="fas fa-shopping-cart"></i> КУПИТЬ АБОНЕМЕНТ
+                    </button>
+                </div>
+                
+                <!-- Электроснегокат 10 прокатов -->
+                <div class="subscription-card popular">
+                    <div class="popular-badge">ВЫГОДНО</div>
+                    
+                    <div class="subscription-header">
+                        <div class="subscription-count">10 ПРОКАТОВ</div>
+                        <div class="subscription-icon">
+                            <i class="fas fa-snowmobile"></i>
+                        </div>
+                        <h3 class="subscription-title">ЭЛЕКТРОСНЕГОКАТ</h3>
+                    </div>
+                    
+                    <div class="subscription-body">
+                        <div class="subscription-description">
+                            ПО 15 МИНУТ НА ЭЛЕКТРОСНЕГОКАТЕ
+                        </div>
+                        
+                        <div class="subscription-gift">
+                            <div class="gift-title">
+                                <i class="fas fa-gift"></i> БОНУС
+                            </div>
+                            <div class="gift-text">+2 ЧАСА ТЮБИНГА в подарок</div>
+                        </div>
+                    </div>
+                    
+                    <div class="subscription-price">
+                        2700 <span class="price-unit">₽</span>
+                    </div>
+                    
+                    <button class="subscription-button" onclick="openPurchaseModal('Электроснегокат (10 прокатов)', 2700)">
+                        <i class="fas fa-crown"></i> ЛУЧШЕЕ ПРЕДЛОЖЕНИЕ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция электроквадроциклов -->
+    <section class="subscription-section">
+        <h2 class="section-title">ЭЛЕКТРОКВАДРОЦИКЛЫ</h2>
+        
+        <div class="forest-bg">
+            <div class="section-bg"></div>
+            
+            <div class="subscriptions-grid">
+                <!-- Электроквадроцикл 5 прокатов -->
+                <div class="subscription-card">
+                    <div class="subscription-header">
+                        <div class="subscription-count">5 ПРОКАТОВ</div>
+                        <div class="subscription-icon">
+                            <i class="fas fa-atv"></i>
+                        </div>
+                        <h3 class="subscription-title">ЭЛЕКТРОКВАДРОЦИКЛ</h3>
+                    </div>
+                    
+                    <div class="subscription-body">
+                        <div class="subscription-description">
+                            ПО 15 МИНУТ НА ЭЛЕКТРОКВАДРОЦИКЛЕ
+                        </div>
+                        
+                        <div class="subscription-gift">
+                            <div class="gift-title">
+                                <i class="fas fa-gift"></i> БОНУС
+                            </div>
+                            <div class="gift-text">+1 ПРОКАТ СПОРТ ИНВЕНТАРЯ в подарок</div>
+                        </div>
+                    </div>
+                    
+                    <div class="subscription-price">
+                        2000 <span class="price-unit">₽</span>
+                    </div>
+                    
+                    <button class="subscription-button" onclick="openPurchaseModal('Электроквадроцикл (5 прокатов)', 2000)">
+                        <i class="fas fa-shopping-cart"></i> КУПИТЬ АБОНЕМЕНТ
+                    </button>
+                </div>
+                
+                <!-- Электроквадроцикл 10 прокатов -->
+                <div class="subscription-card popular">
+                    <div class="popular-badge">ВЫГОДНО</div>
+                    
+                    <div class="subscription-header">
+                        <div class="subscription-count">10 ПРОКАТОВ</div>
+                        <div class="subscription-icon">
+                            <i class="fas fa-atv"></i>
+                        </div>
+                        <h3 class="subscription-title">ЭЛЕКТРОКВАДРОЦИКЛ</h3>
+                    </div>
+                    
+                    <div class="subscription-body">
+                        <div class="subscription-description">
+                            ПО 15 МИНУТ НА ЭЛЕКТРОКВАДРОЦИКЛЕ
+                        </div>
+                        
+                        <div class="subscription-gift">
+                            <div class="gift-title">
+                                <i class="fas fa-gift"></i> БОНУС
+                            </div>
+                            <div class="gift-text">+2 ПРОКАТА СПОРТ ИНВЕНТАРЯ в подарок</div>
+                        </div>
+                    </div>
+                    
+                    <div class="subscription-price">
+                        3500 <span class="price-unit">₽</span>
+                    </div>
+                    
+                    <button class="subscription-button" onclick="openPurchaseModal('Электроквадроцикл (10 прокатов)', 3500)">
+                        <i class="fas fa-crown"></i> ЛУЧШЕЕ ПРЕДЛОЖЕНИЕ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция электромобилей -->
+    <section class="subscription-section">
+        <h2 class="section-title">ЭЛЕКТРОМОБИЛИ</h2>
+        
+        <div class="city-bg">
+            <div class="section-bg"></div>
+            
+            <div class="subscriptions-grid">
+                <!-- Электромобиль 5 прокатов -->
+                <div class="subscription-card">
+                    <div class="subscription-header">
+                        <div class="subscription-count">5 ПРОКАТОВ</div>
+                        <div class="subscription-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3 class="subscription-title">ЭЛЕКТРОМОБИЛЬ</h3>
+                    </div>
+                    
+                    <div class="subscription-body">
+                        <div class="subscription-description">
+                            ПО 15 МИНУТ НА ЭЛЕКТРОМОБИЛЕ
+                        </div>
+                        
+                        <div class="subscription-gift">
+                            <div class="gift-title">
+                                <i class="fas fa-gift"></i> БОНУС
+                            </div>
+                            <div class="gift-text">+1 ПРОКАТ СПОРТ ИНВЕНТАРЯ в подарок</div>
+                        </div>
+                    </div>
+                    
+                    <div class="subscription-price">
+                        1500 <span class="price-unit">₽</span>
+                    </div>
+                    
+                    <button class="subscription-button" onclick="openPurchaseModal('Электромобиль (5 прокатов)', 1500)">
+                        <i class="fas fa-shopping-cart"></i> КУПИТЬ АБОНЕМЕНТ
+                    </button>
+                </div>
+                
+                <!-- Электромобиль 10 прокатов -->
+                <div class="subscription-card popular">
+                    <div class="popular-badge">ВЫГОДНО</div>
+                    
+                    <div class="subscription-header">
+                        <div class="subscription-count">10 ПРОКАТОВ</div>
+                        <div class="subscription-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3 class="subscription-title">ЭЛЕКТРОМОБИЛЬ</h3>
+                    </div>
+                    
+                    <div class="subscription-body">
+                        <div class="subscription-description">
+                            ПО 15 МИНУТ НА ЭЛЕКТРОМОБИЛЕ
+                        </div>
+                        
+                        <div class="subscription-gift">
+                            <div class="gift-title">
+                                <i class="fas fa-gift"></i> БОНУС
+                            </div>
+                            <div class="gift-text">+2 ПРОКАТА СПОРТ ИНВЕНТАРЯ в подарок</div>
+                        </div>
+                    </div>
+                    
+                    <div class="subscription-price">
+                        2700 <span class="price-unit">₽</span>
+                    </div>
+                    
+                    <button class="subscription-button" onclick="openPurchaseModal('Электромобиль (10 прокатов)', 2700)">
+                        <i class="fas fa-crown"></i> ЛУЧШЕЕ ПРЕДЛОЖЕНИЕ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Информационная секция -->
+    <section class="info-section">
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3 class="info-title">КАК РАБОТАЮТ АБОНЕМЕНТЫ</h3>
+                <p class="info-text">Абонемент действует в течение всего сезона. Вы можете использовать прокаты в любой удобный день.</p>
+            </div>
+            
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="info-title">МОЖНО ДЕЛИТЬСЯ</h3>
+                <p class="info-text">Абонементом могут пользоваться все члены вашей семьи. Просто предъявите карту при посещении.</p>
+            </div>
+            
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-percentage"></i>
+                </div>
+                <h3 class="info-title">ВЫГОДА ДО 25%</h3>
+                <p class="info-text">Покупая абонемент, вы экономите до 25% по сравнению с разовыми посещениями.</p>
+            </div>
+            
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <h3 class="info-title">БОНУСЫ И ПОДАРКИ</h3>
+                <p class="info-text">К каждому абонементу мы дарим дополнительные бонусы для большего удовольствия.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно покупки -->
+    <div class="purchase-modal" id="purchaseModal">
+        <div class="purchase-modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">ПОКУПКА АБОНЕМЕНТА</h2>
+                <button class="modal-close" onclick="closePurchaseModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="purchaseForm">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Выбранный абонемент:</label>
+                        <div id="selectedSubscription" style="padding: 12px; background-color: #f9f9f9; border-radius: 8px; font-weight: bold; color: #F26B36; font-size: 18px; margin-bottom: 5px;"></div>
+                        <div id="selectedPrice" style="font-size: 24px; font-weight: bold; text-align: center; color: #F26B36; margin: 15px 0;"></div>
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Ваше имя:</label>
+                        <input type="text" id="purchaseName" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Телефон:</label>
+                        <input type="tel" id="purchasePhone" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Email:</label>
+                        <input type="email" id="purchaseEmail" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 25px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Комментарий:</label>
+                        <textarea id="purchaseComment" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; min-height: 80px; font-size: 16px;" placeholder="Дополнительные пожелания"></textarea>
+                    </div>
+                    
+                    <div style="display: flex; gap: 15px;">
+                        <button type="button" onclick="closePurchaseModal()" style="flex: 1; padding: 15px; background: #f5f5f5; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; transition: background-color 0.3s; font-size: 16px;">
+                            Отмена
+                        </button>
+                        <button type="submit" style="flex: 1; padding: 15px; background: #F26B36; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; transition: background-color 0.3s; font-size: 16px;">
+                            Оформить заявку
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-contact">
+                    <h3 class="footer-contact-title">КОНТАКТЫ</h3>
+                    <p class="footer-contact-description">Принимаем заявки на прокат и покупку абонементов.</p>
+                    
+                    <p class="footer-contact-subtitle">Прокат POL PROKAT в городе Полевской</p>
+                    
+                    <div class="address-block">
+                        <p class="address-text">АДРЕС ПРОКАТА: УЛ. ЛЕНИНА, 19, ПОЛЕВСКОЙ</p>
+                        <p class="address-text">ТЕЛЕФОН: +7 (495) 805-40-54</p>
+                    </div>
+                    
+                    <div class="address-block">
+                        <p class="address-text">АДРЕС ПРОКАТА: УЛ. КОММУНИСТИЧЕСКАЯ, 29, ПОЛЕВСКОЙ</p>
+                        <p class="address-text">ТЕЛЕФОН: +7 (495) 805-18-18</p>
+                    </div>
+                    
+                    <div class="work-hours">
+                        <h3 class="footer-contact-subtitle">ЧАСЫ РАБОТЫ:</h3>
+                        <table class="work-hours-table">
+                            <tr>
+                                <td>ПН-ПТ:</td>
+                                <td>10:00-19:00</td>
+                            </tr>
+                            <tr>
+                                <td>СБ:</td>
+                                <td>10:00-18:00</td>
+                            </tr>
+                            <tr>
+                                <td>ВС:</td>
+                                <td>11:00-16:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <!-- Социальные сети -->
+                    <div class="social-media">
+                        <h3 class="social-media-title">СВЯЗАТЬСЯ С НАМИ:</h3>
+                        <div class="social-icons">
+                            <a href="https://wa.me/79058054054" class="social-icon whatsapp" target="_blank" title="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://vk.com/polprokat" class="social-icon vk" target="_blank" title="ВКонтакте">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="https://t.me/polprokat96" class="social-icon telegram" target="_blank" title="Telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://www.instagram.com/polprokat?utm_medium=copy_link" class="social-icon instagram" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-map">
+                    <div class="footer-map-placeholder">
+                        <img src="images/map.jpg" alt="Карта местоположения сервиса POL PROKAT">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© POL PROKAT. Все права защищены.</p>
+                <p>Абонементы действительны в течение одного сезона. Подробности уточняйте у администратора.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Мобильное меню
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+    const mobileNav = document.getElementById('mobileNav');
+
+    // Открытие меню
+    mobileMenuToggle.addEventListener('click', function() {
+        mobileNav.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Закрытие меню
+    mobileCloseBtn.addEventListener('click', function() {
+        mobileNav.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+
+    // Закрытие меню при клике на ссылку
+    document.querySelectorAll('.mobile-nav .nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+    });
+
+    // Снежинки анимация
+    function createSnowflakes(containerId, count = 30) {
+        const snowContainer = document.getElementById(containerId);
+        if (!snowContainer) return;
+        
+        snowContainer.innerHTML = '';
+        
+        for (let i = 0; i < count; i++) {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            
+            const size = Math.random() * 4 + 1;
+            snowflake.style.width = `${size}px`;
+            snowflake.style.height = `${size}px`;
+            snowflake.style.left = `${Math.random() * 100}%`;
+            snowflake.style.opacity = Math.random() * 0.7 + 0.3;
+            
+            // Для мобильных меньше снежинок и медленнее анимация
+            const duration = window.innerWidth <= 768 ? Math.random() * 15 + 8 : Math.random() * 10 + 5;
+            const delay = Math.random() * 5;
+            
+            // Создаем анимацию падения
+            const animationName = `fall-${containerId}`;
+            
+            // Динамически добавляем CSS анимацию
+            if (!document.getElementById(`animation-${containerId}`)) {
+                const style = document.createElement('style');
+                style.id = `animation-${containerId}`;
+                style.textContent = `
+                    @keyframes ${animationName} {
+                        0% {
+                            top: -20px;
+                            opacity: 0;
+                        }
+                        10% {
+                            opacity: 0.8;
+                        }
+                        90% {
+                            opacity: 0.8;
+                        }
+                        100% {
+                            top: 100%;
+                            opacity: 0;
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+            
+            snowflake.style.animation = `${animationName} ${duration}s linear ${delay}s infinite`;
+            
+            snowContainer.appendChild(snowflake);
+        }
+    }
+
+    // Модальное окно покупки
+    let currentSubscription = '';
+    let currentPrice = 0;
+    
+    function openPurchaseModal(subscriptionName, price) {
+        currentSubscription = subscriptionName;
+        currentPrice = price;
+        
+        document.getElementById('selectedSubscription').textContent = subscriptionName;
+        document.getElementById('selectedPrice').textContent = `${price.toLocaleString('ru-RU')} ₽`;
+        
+        document.getElementById('purchaseModal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closePurchaseModal() {
+        document.getElementById('purchaseModal').classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+    
+    // Обработка формы покупки
+    document.getElementById('purchaseForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('purchaseName').value;
+        const phone = document.getElementById('purchasePhone').value;
+        const email = document.getElementById('purchaseEmail').value;
+        const comment = document.getElementById('purchaseComment').value;
+        
+        alert(`Спасибо, ${name}!\n\nВаша заявка на абонемент "${currentSubscription}" отправлена.\n\nСтоимость: ${currentPrice.toLocaleString('ru-RU')} ₽\nТелефон: ${phone}\nEmail: ${email}\n\nМы свяжемся с вами в ближайшее время для подтверждения заказа.`);
+        
+        document.getElementById('purchaseForm').reset();
+        closePurchaseModal();
+    });
+
+    // Инициализация при загрузке
+    document.addEventListener('DOMContentLoaded', function() {
+        // Создаем снежинки
+        createSnowflakes('snowContainer1');
+        
+        // Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Добавляем активный класс текущей странице в меню
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.mobile-nav .nav-link').forEach(link => {
+            const linkHref = link.getAttribute('href');
+            if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
+                link.style.fontWeight = 'bold';
+                link.style.color = '#fff';
+                link.style.backgroundColor = 'rgba(255,255,255,0.2)';
+                link.style.borderRadius = '5px';
+                link.style.paddingLeft = '15px';
+            }
+        });
+        
+        // Закрытие модального окна при клике на оверлей
+        document.getElementById('purchaseModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePurchaseModal();
+            }
+        });
+        
+        // Закрытие модального окна при нажатии ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closePurchaseModal();
+            }
+        });
+        
+        // Адаптация количества снежинок для мобильных устройств
+        function adjustSnowflakes() {
+            const snowCount = window.innerWidth <= 768 ? 20 : 30;
+            createSnowflakes('snowContainer1', snowCount);
+        }
+        
+        // Пересоздаем снежинки при изменении размера окна
+        window.addEventListener('resize', adjustSnowflakes);
+        
+        // Анимация карточек при скролле
+        const cards = document.querySelectorAll('.subscription-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+        
+        // Добавляем анимацию для заголовков секций
+        const sectionTitles = document.querySelectorAll('.section-title');
+        const titleObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        sectionTitles.forEach(title => {
+            title.style.opacity = '0';
+            title.style.transform = 'translateY(20px)';
+            title.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            titleObserver.observe(title);
+        });
+        
+        // Оптимизация для мобильных устройств
+        if (window.innerWidth <= 768) {
+            // Уменьшаем hover-эффекты для тач-устройств
+            const subscriptionButtons = document.querySelectorAll('.subscription-button');
+            subscriptionButtons.forEach(button => {
+                button.addEventListener('touchstart', function() {
+                    this.style.transform = 'scale(0.98)';
+                });
+                button.addEventListener('touchend', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        }
+    });
+    </script>
+</body>
+</html>

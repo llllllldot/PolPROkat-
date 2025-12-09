@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервис - POL PROKAT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="images/logo1.png" alt="POL PROKAT" 
+                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjUwIiB2aWV3Qm94PSIwIDAgMTUwIDUwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8dGV4dCB4PSI3NSIgeT0iMjgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtd2VpZ2h0PSJib2xkIj5QT0wgUFJPS0FUPC90ZXh0Pgo8L3N2Zz4='; this.style.filter='none'"
+                         style="height: 50px;">
+                </a>
+            </div>
+
+            <nav class="desktop-nav">
+    <a href="index.html" class="nav-link">ГЛАВНАЯ</a>
+    <a href="magazin.html" class="nav-link">МАГАЗИН</a>
+    <a href="page1.html" class="nav-link">ЗИМНИЙ ПРОКАТ</a>
+    <a href="page.html" class="nav-link">ЛЕТНИЙ ПРОКАТ</a>
+    <a href="abonements.html" class="nav-link">АБОНЕМЕНТЫ</a>
+    <a href="sale.html" class="nav-link">АКЦИИ</a>
+    <a href="#footer" class="nav-link">КОНТАКТЫ</a>
+</nav>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Мобильное меню -->
+        <nav class="mobile-nav" id="mobileNav">
+            <button class="mobile-close-btn" id="mobileCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="magazin.html" class="nav-link">Магазин</a>
+                <a href="page1.html" class="nav-link">Зимний прокат</a>
+                <a href="page.html" class="nav-link">Летний прокат</a>
+                <a href="serves.html" class="nav-link">Сервис</a>
+                <a href="sale.html" class="nav-link">Акции</a>
+                <a href="#footer" class="nav-link">Контакты</a>
+            <div class="mobile-phone">+7 (905) 805-40-54</div>
+        </nav>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="index.html">Главная</a> / <span>Сервис</span>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <div class="page-header">
+        <h1 class="page-title">СЕРВИС</h1>
+        <p class="page-subtitle">Профессиональное обслуживание и ремонт велосипедов и электросамокатов в Полевском</p>
+    </div>
+
+    <!-- Секция услуг -->
+    <section class="service-section">
+        <!-- Выбор типа ремонта -->
+        <div class="repair-type-selector">
+            <button class="type-btn active" id="bikeBtn" onclick="showServices('bike')">
+                <i class="fas fa-bicycle"></i> Ремонт велосипедов
+            </button>
+            <button class="type-btn" id="escooterBtn" onclick="showServices('escooter')">
+                <i class="fas fa-bolt"></i> Ремонт электросамокатов
+            </button>
+        </div>
+        
+        <!-- Услуги для велосипедов -->
+        <div class="services-container active" id="bikeServices">
+            <!-- Вилка, рулевая колонка, руль, седло -->
+            <h3 class="category-title">Вилка, рулевая колонка, руль, седло</h3>
+            <div class="services-list">
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1350" data-name="Замена вилки с обрезкой штока и переборкой рулевой колонки с регулировкой тормоза">
+                    <div class="service-info">
+                        <div class="service-name">Замена вилки с обрезкой штока и переборкой рулевой колонки с регулировкой тормоза</div>
+                    </div>
+                    <div class="service-cost">1350 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1050" data-name="Замена вилки с обрезкой штока и переборкой рулевой колонки без регулировки тормоза">
+                    <div class="service-info">
+                        <div class="service-name">Замена вилки с обрезкой штока и переборкой рулевой колонки без регулировки тормоза</div>
+                    </div>
+                    <div class="service-cost">1050 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="600" data-name="Замена интегрированной рулевой колонки">
+                    <div class="service-info">
+                        <div class="service-name">Замена интегрированной рулевой колонки</div>
+                    </div>
+                    <div class="service-cost">600 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="700" data-name="Замена рулевой колонки">
+                    <div class="service-info">
+                        <div class="service-name">Замена рулевой колонки</div>
+                    </div>
+                    <div class="service-cost">700 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="500" data-name="Замена/установка выноса одноболтового">
+                    <div class="service-info">
+                        <div class="service-name">Замена/установка выноса одноболтового</div>
+                    </div>
+                    <div class="service-cost">500 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="300" data-name="Замена/установка выноса со съемной крышкой">
+                    <div class="service-info">
+                        <div class="service-name">Замена/установка выноса со съемной крышкой</div>
+                    </div>
+                    <div class="service-cost">300 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="300" data-name="Замена/установка грипс">
+                    <div class="service-info">
+                        <div class="service-name">Замена/установка грипс</div>
+                    </div>
+                    <div class="service-cost">300 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="350" data-name="Замена/установка подседельного штыря">
+                    <div class="service-info">
+                        <div class="service-name">Замена/установка подседельного штыря</div>
+                    </div>
+                    <div class="service-cost">350 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="700" data-name="Замена/установка руля">
+                    <div class="service-info">
+                        <div class="service-name">Замена/установка руля</div>
+                    </div>
+                    <div class="service-cost">700 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="300" data-name="Замена/установка седла">
+                    <div class="service-info">
+                        <div class="service-name">Замена/установка седла</div>
+                    </div>
+                    <div class="service-cost">300 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="700" data-name="Замена/установка якоря (сложный)">
+                    <div class="service-info">
+                        <div class="service-name">Замена/установка якоря (сложный)</div>
+                    </div>
+                    <div class="service-cost">700 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="300" data-name="Замена/установка якоря (простой)">
+                    <div class="service-info">
+                        <div class="service-name">Замена/установка якоря (простой)</div>
+                    </div>
+                    <div class="service-cost">300 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="700" data-name="Обмотка шоссейного руля">
+                    <div class="service-info">
+                        <div class="service-name">Обмотка шоссейного руля</div>
+                    </div>
+                    <div class="service-cost">700 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="350" data-name="Обрезка штока вилки (без съема)">
+                    <div class="service-info">
+                        <div class="service-name">Обрезка штока вилки (без съема)</div>
+                    </div>
+                    <div class="service-cost">350 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="500" data-name="Обрезка штока вилки (со съемом)">
+                    <div class="service-info">
+                        <div class="service-name">Обрезка штока вилки (со съемом)</div>
+                    </div>
+                    <div class="service-cost">500 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="2500" data-name="Переборка вилки с демпфером (без стоимости масла)">
+                    <div class="service-info">
+                        <div class="service-name">Переборка вилки с демпфером (без стоимости масла)</div>
+                    </div>
+                    <div class="service-cost">2500 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1500" data-name="Переборка пружинно-эластомерной вилки">
+                    <div class="service-info">
+                        <div class="service-name">Переборка пружинно-эластомерной вилки</div>
+                    </div>
+                    <div class="service-cost">1500 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="700" data-name="Переборка рулевой колонки">
+                    <div class="service-info">
+                        <div class="service-name">Переборка рулевой колонки</div>
+                    </div>
+                    <div class="service-cost">700 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="350" data-name="Регулировка люфта рулевой колонки">
+                    <div class="service-info">
+                        <div class="service-name">Регулировка люфта рулевой колонки</div>
+                    </div>
+                    <div class="service-cost">350 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="450" data-name="Регулировка люфта резьбовой рулевой колонки">
+                    <div class="service-info">
+                        <div class="service-name">Регулировка люфта резьбовой рулевой колонки</div>
+                    </div>
+                    <div class="service-cost">450 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="250" data-name="Установка опорного кольца на шток вилки">
+                    <div class="service-info">
+                        <div class="service-name">Установка опорного кольца на шток вилки</div>
+                    </div>
+                    <div class="service-cost">250 ₽</div>
+                </div>
+            </div>
+            
+            <!-- Каретка, шатуны, педали -->
+            <h3 class="category-title">Каретка, шатуны, педали</h3>
+            <div class="services-list">
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="600" data-name="Замена звезд со съемом шатунов">
+                    <div class="service-info">
+                        <div class="service-name">Замена звезд со съемом шатунов</div>
+                    </div>
+                    <div class="service-cost">600 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="400" data-name="Замена звезды ВМХ">
+                    <div class="service-info">
+                        <div class="service-name">Замена звезды ВМХ</div>
+                    </div>
+                    <div class="service-cost">400 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1000" data-name="Замена/обслуживание картриджа-каретки со съемом шатунов">
+                    <div class="service-info">
+                        <div class="service-name">Замена/обслуживание картриджа-каретки со съемом шатунов</div>
+                    </div>
+                    <div class="service-cost">1000 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1500" data-name="Замена картриджа-каретки со съемом шатунов (сложный)">
+                    <div class="service-info">
+                        <div class="service-name">Замена картриджа-каретки со съемом шатунов (сложный)</div>
+                    </div>
+                    <div class="service-cost">1500 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="700" data-name="Замена системы ВМХ">
+                    <div class="service-info">
+                        <div class="service-name">Замена системы ВМХ</div>
+                    </div>
+                    <div class="service-cost">700 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="900" data-name="Замена системы с установкой педалей (+настройка переднего переключателя)">
+                    <div class="service-info">
+                        <div class="service-name">Замена системы с установкой педалей (+настройка переднего переключателя)</div>
+                    </div>
+                    <div class="service-cost">900 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="300" data-name="Замена/установка педалей">
+                    <div class="service-info">
+                        <div class="service-name">Замена/установка педалей</div>
+                    </div>
+                    <div class="service-cost">300 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1000" data-name="Ремонт разборной каретки, смазка регулировка, устранение люфта">
+                    <div class="service-info">
+                        <div class="service-name">Ремонт разборной каретки, смазка регулировка, устранение люфта</div>
+                    </div>
+                    <div class="service-cost">1000 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1500" data-name="Съем 'проблемной каретки' с выпиливанием чаш">
+                    <div class="service-info">
+                        <div class="service-name">Съем 'проблемной каретки' с выпиливанием чаш</div>
+                    </div>
+                    <div class="service-cost">1500 ₽</div>
+                </div>
+            </div>
+            
+            <!-- Переключатели, монетки -->
+            <h3 class="category-title">Переключатели, монетки</h3>
+            <div class="services-list">
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="700" data-name="Замена переключателя с регулировкой">
+                    <div class="service-info">
+                        <div class="service-name">Замена переключателя с регулировкой</div>
+                    </div>
+                    <div class="service-cost">700 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="800" data-name="Шифтер замена с регулировкой">
+                    <div class="service-info">
+                        <div class="service-name">Шифтер замена с регулировкой</div>
+                    </div>
+                    <div class="service-cost">800 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="600" data-name="Замена рубашки переключения">
+                    <div class="service-info">
+                        <div class="service-name">Замена рубашки переключения</div>
+                    </div>
+                    <div class="service-cost">600 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="600" data-name="Замена троса переключения">
+                    <div class="service-info">
+                        <div class="service-name">Замена троса переключения</div>
+                    </div>
+                    <div class="service-cost">600 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="350" data-name="Регулировка переключателя">
+                    <div class="service-info">
+                        <div class="service-name">Регулировка переключателя</div>
+                    </div>
+                    <div class="service-cost">350 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="500" data-name="Регулировка переключателя со смазкой и отчисткой тросиков">
+                    <div class="service-info">
+                        <div class="service-name">Регулировка переключателя со смазкой и отчисткой тросиков</div>
+                    </div>
+                    <div class="service-cost">500 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="350" data-name="Чистка и смазка роликов заднего переключателя">
+                    <div class="service-info">
+                        <div class="service-name">Чистка и смазка роликов заднего переключателя</div>
+                    </div>
+                    <div class="service-cost">350 ₽</div>
+                </div>
+            </div>
+            
+            <!-- Колеса, втулки, задние звезды -->
+            <h3 class="category-title">Колеса, втулки, задние звезды</h3>
+            <div class="services-list">
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="350" data-name="Заклейка камеры">
+                    <div class="service-info">
+                        <div class="service-name">Заклейка камеры</div>
+                    </div>
+                    <div class="service-cost">350 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="450" data-name="Замена камеры, покрышки Fat Bike">
+                    <div class="service-info">
+                        <div class="service-name">Замена камеры, покрышки Fat Bike</div>
+                    </div>
+                    <div class="service-cost">450 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="350" data-name="Замена камеры, покрышки (со съемом колеса на гайках)">
+                    <div class="service-info">
+                        <div class="service-name">Замена камеры, покрышки (со съемом колеса на гайках)</div>
+                    </div>
+                    <div class="service-cost">350 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="400" data-name="Замена пром. подшипника во втулке (1шт.)">
+                    <div class="service-info">
+                        <div class="service-name">Замена пром. подшипника во втулке (1шт.)</div>
+                    </div>
+                    <div class="service-cost">400 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="400" data-name="Замена трещотки 'синглспид'">
+                    <div class="service-info">
+                        <div class="service-name">Замена трещотки 'синглспид'</div>
+                    </div>
+                    <div class="service-cost">400 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="500" data-name="Замена/установка трещотки/кассеты">
+                    <div class="service-info">
+                        <div class="service-name">Замена/установка трещотки/кассеты</div>
+                    </div>
+                    <div class="service-cost">500 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="600" data-name="Замена/установка 'фривила'">
+                    <div class="service-info">
+                        <div class="service-name">Замена/установка 'фривила'</div>
+                    </div>
+                    <div class="service-cost">600 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1200" data-name="Переборка барабана,трещотки (чистка, смазка)">
+                    <div class="service-info">
+                        <div class="service-name">Переборка барабана,трещотки (чистка, смазка)</div>
+                    </div>
+                    <div class="service-cost">1200 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="900" data-name="Переборка задней втулки со съемом кассеты/трещотки">
+                    <div class="service-info">
+                        <div class="service-name">Переборка задней втулки со съемом кассеты/трещотки</div>
+                    </div>
+                    <div class="service-cost">900 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="550" data-name="Переборка передней втулки (чистка, смазка)">
+                    <div class="service-info">
+                        <div class="service-name">Переборка передней втулки (чистка, смазка)</div>
+                    </div>
+                    <div class="service-cost">550 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1500" data-name="Переспицовка">
+                    <div class="service-info">
+                        <div class="service-name">Переспицовка</div>
+                    </div>
+                    <div class="service-cost">1500 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1900" data-name="Переспицовка Fat Bike">
+                    <div class="service-info">
+                        <div class="service-name">Переспицовка Fat Bike</div>
+                    </div>
+                    <div class="service-cost">1900 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="2000" data-name="Переспицовка с дефектным ободом">
+                    <div class="service-info">
+                        <div class="service-name">Переспицовка с дефектным ободом</div>
+                    </div>
+                    <div class="service-cost">2000 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="500" data-name="Устранение 'восьмерки' без замены спиц">
+                    <div class="service-info">
+                        <div class="service-name">Устранение 'восьмерки' без замены спиц</div>
+                    </div>
+                    <div class="service-cost">500 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="50" data-name="Спица установка /замена (за 1 штуку) без снятия и установки звезд">
+                    <div class="service-info">
+                        <div class="service-name">Спица установка /замена (за 1 штуку) без снятия и установки звезд</div>
+                    </div>
+                    <div class="service-cost">50 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="850" data-name="Протяжка спиц колеса с центровкой">
+                    <div class="service-info">
+                        <div class="service-name">Протяжка спиц колеса с центровкой</div>
+                    </div>
+                    <div class="service-cost">850 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="400" data-name="Рассверловка ниппельного отверстия под AV">
+                    <div class="service-info">
+                        <div class="service-name">Рассверловка ниппельного отверстия под AV</div>
+                    </div>
+                    <div class="service-cost">400 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="300" data-name="Расчет длины спиц">
+                    <div class="service-info">
+                        <div class="service-name">Расчет длины спиц</div>
+                    </div>
+                    <div class="service-cost">300 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="300" data-name="Регулировка люфта задней/передней втулки без снятия звезд">
+                    <div class="service-info">
+                        <div class="service-name">Регулировка люфта задней/передней втулки без снятия звезд</div>
+                    </div>
+                    <div class="service-cost">300 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1500" data-name="Сборка колеса на новый обод">
+                    <div class="service-info">
+                        <div class="service-name">Сборка колеса на новый обод</div>
+                    </div>
+                    <div class="service-cost">1500 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="200" data-name="Чистка и смазка пром. подшипника (1 шт.)">
+                    <div class="service-info">
+                        <div class="service-name">Чистка и смазка пром. подшипника (1 шт.)</div>
+                    </div>
+                    <div class="service-cost">200 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="600" data-name="Чистка кассеты/трещотки/передней звезды (со съемом)">
+                    <div class="service-info">
+                        <div class="service-name">Чистка кассеты/трещотки/передней звезды (со съемом)</div>
+                    </div>
+                    <div class="service-cost">600 ₽</div>
+                </div>
+            </div>
+            
+            <!-- Тормоза механические -->
+            <h3 class="category-title">Тормоза механические</h3>
+            <div class="services-list">
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="650" data-name="Замена колодок с регулировкой disk (cо смазкой тросиков)">
+                    <div class="service-info">
+                        <div class="service-name">Замена колодок с регулировкой disk (cо смазкой тросиков)</div>
+                    </div>
+                    <div class="service-cost">650 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="500" data-name="Замена колодок с регулировкой v-brake (без смазки тросиков)">
+                    <div class="service-info">
+                        <div class="service-name">Замена колодок с регулировкой v-brake (без смазки тросиков)</div>
+                    </div>
+                    <div class="service-cost">500 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="550" data-name="Замена колодок с регулировкой v-brake (cо смазкой тросиков)">
+                    <div class="service-info">
+                        <div class="service-name">Замена колодок с регулировкой v-brake (cо смазкой тросиков)</div>
+                    </div>
+                    <div class="service-cost">550 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="650" data-name="Замена ручки тормоза с регулировкой (со смазкой тросика)">
+                    <div class="service-info">
+                        <div class="service-name">Замена ручки тормоза с регулировкой (со смазкой тросика)</div>
+                    </div>
+                    <div class="service-cost">650 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1000" data-name="Замена тормоза ВМХ с гироротором">
+                    <div class="service-info">
+                        <div class="service-name">Замена тормоза ВМХ с гироротором</div>
+                    </div>
+                    <div class="service-cost">1000 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="600" data-name="Замена тормоза disk">
+                    <div class="service-info">
+                        <div class="service-name">Замена тормоза disk</div>
+                    </div>
+                    <div class="service-cost">600 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="600" data-name="Замена тормоза v-brake">
+                    <div class="service-info">
+                        <div class="service-name">Замена тормоза v-brake</div>
+                    </div>
+                    <div class="service-cost">600 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="550" data-name="Замена троса/рубашки тормоза с регулировкой и смазкой">
+                    <div class="service-info">
+                        <div class="service-name">Замена троса/рубашки тормоза с регулировкой и смазка</div>
+                    </div>
+                    <div class="service-cost">550 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="700" data-name="Обезжиривание (шлифовка колодок с регулировкой+чистка диска)">
+                    <div class="service-info">
+                        <div class="service-name">Обезжиривание (шлифовка колодок с регулировкой+чистка диска)</div>
+                    </div>
+                    <div class="service-cost">700 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="400" data-name="Регулировка тормоза (без смазки)">
+                    <div class="service-info">
+                        <div class="service-name">Регулировка тормоза (без смазки)</div>
+                    </div>
+                    <div class="service-cost">400 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="500" data-name="Регулировка тормоза (со смазкой)">
+                    <div class="service-info">
+                        <div class="service-name">Регулировка тормоза (со смазкой)</div>
+                    </div>
+                    <div class="service-cost">500 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="400" data-name="Установка/замена тормозного диска">
+                    <div class="service-info">
+                        <div class="service-name">Установка/замена тормозного диска</div>
+                    </div>
+                    <div class="service-cost">400 ₽</div>
+                </div>
+            </div>
+            
+            <!-- Тормоза гидравлические -->
+            <h3 class="category-title">Тормоза гидравлические</h3>
+            <div class="services-list">
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="550" data-name="Доливка жидкости (dot/oil)">
+                    <div class="service-info">
+                        <div class="service-name">Доливка жидкости (dot/oil)</div>
+                    </div>
+                    <div class="service-cost">550 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1000" data-name="Прокачка гидравлического тормоза">
+                    <div class="service-info">
+                        <div class="service-name">Прокачка гидравлического тормоза</div>
+                    </div>
+                    <div class="service-cost">1000 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="400" data-name="Регулировка гидравлического тормоза">
+                    <div class="service-info">
+                        <div class="service-name">Регулировка гидравлического тормоза</div>
+                    </div>
+                    <div class="service-cost">400 ₽</div>
+                </div>
+            </div>
+            
+            <!-- Цепь -->
+            <h3 class="category-title">Цепь</h3>
+            <div class="services-list">
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="400" data-name="Замена цепи МТВ/ВМХ">
+                    <div class="service-info">
+                        <div class="service-name">Замена цепи МТВ/ВМХ</div>
+                    </div>
+                    <div class="service-cost">400 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="400" data-name="Изменение длины цепи">
+                    <div class="service-info">
+                        <div class="service-name">Изменение длины цепи</div>
+                    </div>
+                    <div class="service-cost">400 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="250" data-name="Натяжка цепи">
+                    <div class="service-info">
+                        <div class="service-name">Натяжка цепи</div>
+                    </div>
+                    <div class="service-cost">250 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="300" data-name="Установка цепи">
+                    <div class="service-info">
+                        <div class="service-name">Установка цепи</div>
+                    </div>
+                    <div class="service-cost">300 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="750" data-name="Чистка+смазка цепи">
+                    <div class="service-info">
+                        <div class="service-name">Чистка+смазка цепи</div>
+                    </div>
+                    <div class="service-cost">750 ₽</div>
+                </div>
+            </div>
+            
+            <!-- Установка аксессуаров -->
+            <h3 class="category-title">Установка аксессуаров</h3>
+            <div class="services-list">
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="300" data-name="Настройка велокомпьютера">
+                    <div class="service-info">
+                        <div class="service-name">Настройка велокомпьютера</div>
+                    </div>
+                    <div class="service-cost">300 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="600" data-name="Установка багажника">
+                    <div class="service-info">
+                        <div class="service-name">Установка багажника</div>
+                    </div>
+                    <div class="service-cost">600 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="450" data-name="Установка быстросъемных крыльев">
+                    <div class="service-info">
+                        <div class="service-name">Установка быстросъемных крыльев</div>
+                    </div>
+                    <div class="service-cost">450 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="500" data-name="Установка велокомпьютера">
+                    <div class="service-info">
+                        <div class="service-name">Установка велокомпьютера</div>
+                    </div>
+                    <div class="service-cost">500 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="300" data-name="Установка подножки">
+                    <div class="service-info">
+                        <div class="service-name">Установка подножки</div>
+                    </div>
+                    <div class="service-cost">300 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="700" data-name="Установка полноразмерных крыльев">
+                    <div class="service-info">
+                        <div class="service-name">Установка полноразмерных крыльев</div>
+                    </div>
+                    <div class="service-cost">700 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="200" data-name="Установка рогов">
+                    <div class="service-info">
+                        <div class="service-name">Установка рогов</div>
+                    </div>
+                    <div class="service-cost">200 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="200" data-name="Установка фонаря">
+                    <div class="service-info">
+                        <div class="service-name">Установка фонаря</div>
+                    </div>
+                    <div class="service-cost">200 ₽</div>
+                </div>
+            </div>
+            
+            <!-- Сборка и техническое обслуживание -->
+            <h3 class="category-title">Сборка и техническое обслуживание</h3>
+            <div class="services-list">
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="2000" data-name="Сборка велосипеда из коробки">
+                    <div class="service-info">
+                        <div class="service-name">Сборка велосипеда из коробки</div>
+                    </div>
+                    <div class="service-cost">2000 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="2700" data-name="Сборка велосипеда из коробки ('Китайские' бренды)">
+                    <div class="service-info">
+                        <div class="service-name">Сборка велосипеда из коробки ('Китайские' бренды)</div>
+                    </div>
+                    <div class="service-cost">2700 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1700" data-name="Экспресс ТО">
+                    <div class="service-info">
+                        <div class="service-name">Экспресс ТО</div>
+                    </div>
+                    <div class="service-cost">1700 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="3700" data-name="Стандартное ТО">
+                    <div class="service-info">
+                        <div class="service-name">Стандартное ТО</div>
+                    </div>
+                    <div class="service-cost">3700 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="4200" data-name="Полное ТО">
+                    <div class="service-info">
+                        <div class="service-name">Полное ТО</div>
+                    </div>
+                    <div class="service-cost">4200 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="350" data-name="Доставка запчастей (Летний сезон: май-сентябрь)">
+                    <div class="service-info">
+                        <div class="service-name">Доставка запчастей (Летний сезон: май-сентябрь)</div>
+                    </div>
+                    <div class="service-cost">350 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="450" data-name="Доставка запчастей (Зимний сезон: октябрь-апрель)">
+                    <div class="service-info">
+                        <div class="service-name">Доставка запчастей (Зимний сезон: октябрь-апрель)</div>
+                    </div>
+                    <div class="service-cost">450 ₽</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Услуги для электросамокатов -->
+        <div class="services-container" id="escooterServices">
+            <h3 class="category-title">Ремонт электросамокатов / электровелосипедов</h3>
+            <div class="services-list">
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="990" data-name="Замена аккумулятора">
+                    <div class="service-info">
+                        <div class="service-name">Замена аккумулятора</div>
+                    </div>
+                    <div class="service-cost">990 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1590" data-name="Замена мотор-колеса">
+                    <div class="service-info">
+                        <div class="service-name">Замена мотор-колеса</div>
+                    </div>
+                    <div class="service-cost">1590 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1290" data-name="Замена контроллера">
+                    <div class="service-info">
+                        <div class="service-name">Замена контроллера</div>
+                    </div>
+                    <div class="service-cost">1290 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="990" data-name="Замена курка газа/ручки газа">
+                    <div class="service-info">
+                        <div class="service-name">Замена курка газа/ручки газа</div>
+                    </div>
+                    <div class="service-cost">990 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1590" data-name="Замена бортового компьютера">
+                    <div class="service-info">
+                        <div class="service-name">Замена бортового компьютера</div>
+                    </div>
+                    <div class="service-cost">1590 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1290" data-name="Замена фары, светодиодов">
+                    <div class="service-info">
+                        <div class="service-name">Замена фары, светодиодов</div>
+                    </div>
+                    <div class="service-cost">1290 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="990" data-name="Замена кнопки включения">
+                    <div class="service-info">
+                        <div class="service-name">Замена кнопки включения</div>
+                    </div>
+                    <div class="service-cost">990 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="990" data-name="Замена разъема зарядки">
+                    <div class="service-info">
+                        <div class="service-name">Замена разъема зарядки</div>
+                    </div>
+                    <div class="service-cost">990 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1190" data-name="Замена датчика холла">
+                    <div class="service-info">
+                        <div class="service-name">Замена датчика холла</div>
+                    </div>
+                    <div class="service-cost">1190 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1190" data-name="Замена подшипников">
+                    <div class="service-info">
+                        <div class="service-name">Замена подшипников</div>
+                    </div>
+                    <div class="service-cost">1190 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1290" data-name="Замена дисплея/экрана">
+                    <div class="service-info">
+                        <div class="service-name">Замена дисплея/экрана</div>
+                    </div>
+                    <div class="service-cost">1290 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="990" data-name="Ремонт аккумулятора">
+                    <div class="service-info">
+                        <div class="service-name">Ремонт аккумулятора</div>
+                    </div>
+                    <div class="service-cost">990 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1590" data-name="Ремонт мотор-колеса">
+                    <div class="service-info">
+                        <div class="service-name">Ремонт мотор-колеса</div>
+                    </div>
+                    <div class="service-cost">1590 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1290" data-name="Ремонт контроллера">
+                    <div class="service-info">
+                        <div class="service-name">Ремонт контроллера</div>
+                    </div>
+                    <div class="service-cost">1290 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1590" data-name="Ремонт платы">
+                    <div class="service-info">
+                        <div class="service-name">Ремонт платы</div>
+                    </div>
+                    <div class="service-cost">1590 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1000" data-name="Диагностика электроники">
+                    <div class="service-info">
+                        <div class="service-name">Диагностика электроники</div>
+                    </div>
+                    <div class="service-cost">1000 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="1000" data-name="Диагностика аккумулятора">
+                    <div class="service-info">
+                        <div class="service-name">Диагностика аккумулятора</div>
+                    </div>
+                    <div class="service-cost">1000 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="500" data-name="Сборка аккумулятора 2S-6S">
+                    <div class="service-info">
+                        <div class="service-name">Сборка аккумулятора 2S-6S</div>
+                    </div>
+                    <div class="service-cost">500 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="3000" data-name="Сборка аккумулятора 7S-20S">
+                    <div class="service-info">
+                        <div class="service-name">Сборка аккумулятора 7S-20S</div>
+                    </div>
+                    <div class="service-cost">3000 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="350" data-name="Доставка запчастей (Летний сезон: май-сентябрь)">
+                    <div class="service-info">
+                        <div class="service-name">Доставка запчастей (Летний сезон: май-сентябрь)</div>
+                    </div>
+                    <div class="service-cost">350 ₽</div>
+                </div>
+                <div class="service-item">
+                    <input type="checkbox" class="service-checkbox" data-price="450" data-name="Доставка запчастей (Зимний сезон: октябрь-апрель)">
+                    <div class="service-info">
+                        <div class="service-name">Доставка запчастей (Зимний сезон: октябрь-апрель)</div>
+                    </div>
+                    <div class="service-cost">450 ₽</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Калькулятор стоимости -->
+        <div class="calculator-section" id="calculator">
+            
+            <div class="calculator-summary">
+                <div class="selected-count">
+                    Выбрано услуг: <span id="selectedCount">0</span>
+                </div>
+                <div class="total-price">
+                    Итого: <span id="totalPrice">0 ₽</span>
+                </div>
+            </div>
+            
+            <div class="calculator-actions">
+                <button class="calc-btn reset" onclick="resetSelection()">
+                    <i class="fas fa-redo"></i> Сбросить выбор
+                </button>
+                <button class="calc-btn booking" onclick="openBookingModal()">
+                    <i class="fas fa-calendar-check"></i> Записаться на ремонт
+                </button>
+            </div>
+        </div>
+        
+        <!-- Информационные блоки -->
+        <div class="info-section">
+            <h2 class="info-title">УСЛОВИЯ СЕРВИСНОГО ОБСЛУЖИВАНИЯ</h2>
+            
+            <div class="info-block">
+                <h3 class="info-subtitle">
+                    <i class="fas fa-parking"></i> Платная «парковка»
+                </h3>
+                <p class="info-text">
+                    По окончании ремонта и звонка мастера о готовности вашей техники, начинается 3-х дневный бесплатный срок ожидания (включая день звонка).
+                </p>
+                <p class="info-text">
+                    В этот период вы можете забрать свою технику. По окончании данного срока каждый день простое вашей техники в прокате будет оцениваться в:
+                </p>
+                <div class="info-note">
+                    <strong>100 руб./день</strong> — стоимость хранения техники после бесплатного периода
+                </div>
+            </div>
+            
+            <div class="info-block">
+                <h3 class="info-subtitle">
+                    <i class="fas fa-broom"></i> Доплата за грязь
+                </h3>
+                <p class="info-text">
+                    Обслуживание грязного велосипеда / электросамоката облагается дополнительной оплатой.
+                </p>
+                <div class="info-note">
+                    <strong>от 200 руб.</strong> — в зависимости от степени загрязнения. <br>
+                    Доплата связана с неудобствами работы с узлами и затратами на очистку техники.
+                </div>
+            </div>
+            
+            <div class="info-block">
+                <h3 class="info-subtitle">
+                    <i class="fas fa-info-circle"></i> Примечания
+                </h3>
+                <p class="info-text">
+                    • Цены указаны за работу без учета стоимости запчастей<br>
+                    • Диагностика платная, ее стоимость вычитается из итоговой суммы при согласии на ремонт<br>
+                    • Все цены указаны в рублях и являются ориентировочными<br>
+                    • Точная стоимость будет определена после диагностики
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно записи на ремонт -->
+    <div class="price-modal" id="bookingModal">
+        <div class="price-modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">ЗАПИСЬ НА РЕМОНТ</h2>
+                <button class="modal-close" onclick="closeBookingModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Тип техники:</label>
+                        <div id="selectedType" style="padding: 10px; background-color: #f9f9f9; border-radius: 5px; font-weight: bold; color: #F26B36;">Велосипед</div>
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Выбранные услуги:</label>
+                        <div id="selectedServicesList" style="max-height: 200px; overflow-y: auto; padding: 10px; background-color: #f9f9f9; border-radius: 5px; border: 1px solid #eee;">
+                            <p style="color: #666; font-style: italic; text-align: center;">Не выбрано ни одной услуги</p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Предварительная стоимость:</label>
+                        <div id="modalTotalPrice" style="padding: 12px; background-color: #fff9e6; border-radius: 5px; font-size: 24px; font-weight: bold; text-align: center; color: #F26B36;">0 ₽</div>
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Ваше имя:</label>
+                        <input type="text" id="bookingName" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Телефон:</label>
+                        <input type="tel" id="bookingPhone" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Дата и время:</label>
+                        <input type="datetime-local" id="bookingDateTime" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 25px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">Дополнительная информация:</label>
+                        <textarea id="bookingMessage" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; min-height: 100px;" placeholder="Опишите проблему, укажите модель техники и другую важную информацию"></textarea>
+                    </div>
+                    
+                    <div style="display: flex; gap: 15px;">
+                        <button type="button" onclick="closeBookingModal()" style="flex: 1; padding: 15px; background: #f5f5f5; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: background-color 0.3s;">
+                            Отмена
+                        </button>
+                        <button type="submit" style="flex: 1; padding: 15px; background: #F26B36; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: background-color 0.3s;">
+                            Отправить заявку
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-contact">
+                    <h3 class="footer-contact-title">КОНТАКТЫ СЕРВИСА</h3>
+                    <p class="footer-contact-description">Принимаем заявки на ремонт и обслуживание велосипедов и электросамокатов.</p>
+                    
+                    <p class="footer-contact-subtitle">Сервисный центр POL PROKAT в городе Полевской</p>
+                    
+                    <div class="address-block">
+                        <p class="address-text">АДРЕС СЕРВИСА: УЛ. ЛЕНИНА, 19, ПОЛЕВСКОЙ</p>
+                        <p class="address-text">ТЕЛЕФОН СЕРВИСА: +7 (495) 805-40-54</p>
+                    </div>
+                    
+                    <div class="address-block">
+                        <p class="address-text">АДРЕС СЕРВИСА: УЛ. КОММУНИСТИЧЕСКАЯ, 29, ПОЛЕВСКОЙ</p>
+                        <p class="address-text">ТЕЛЕФОН СЕРВИСА: +7 (495) 805-18-18</p>
+                    </div>
+                    
+                    <div class="work-hours">
+                        <h3 class="footer-contact-subtitle">ЧАСЫ РАБОТЫ СЕРВИСА:</h3>
+                        <table class="work-hours-table">
+                            <tr>
+                                <td>ПН-ПТ:</td>
+                                <td>10:00-19:00</td>
+                            </tr>
+                            <tr>
+                                <td>СБ:</td>
+                                <td>10:00-18:00</td>
+                            </tr>
+                            <tr>
+                                <td>ВС:</td>
+                                <td>11:00-16:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <!-- Социальные сети -->
+                    <div class="social-media">
+                        <h3 class="social-media-title">СВЯЗАТЬСЯ С СЕРВИСОМ:</h3>
+                        <div class="social-icons">
+                            <a href="https://wa.me/79058054054" class="social-icon whatsapp" target="_blank" title="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://vk.com/polprokat" class="social-icon vk" target="_blank" title="ВКонтакте">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="https://t.me/polprokat96" class="social-icon telegram" target="_blank" title="Telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://www.instagram.com/polprokat?utm_medium=copy_link" class="social-icon instagram" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-map">
+                    <div class="footer-map-placeholder">
+                        <img src="images/map.jpg" alt="Карта местоположения сервиса POL PROKAT">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© POL PROKAT. Все права защищены.</p>
+                <p>Профессиональный сервис по ремонту и обслуживанию велосипедов и электросамокатов</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Мобильное меню
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+    const mobileNav = document.getElementById('mobileNav');
+
+    // Открытие меню
+    mobileMenuToggle.addEventListener('click', function() {
+        mobileNav.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Закрытие меню
+    mobileCloseBtn.addEventListener('click', function() {
+        mobileNav.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+
+    // Закрытие меню при клике на ссылку
+    document.querySelectorAll('.mobile-nav .nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+    });
+
+    // Переключение между типами услуг
+    function showServices(type) {
+        // Обновляем активные кнопки
+        document.getElementById('bikeBtn').classList.remove('active');
+        document.getElementById('escooterBtn').classList.remove('active');
+        
+        // Скрываем все контейнеры услуг
+        document.getElementById('bikeServices').classList.remove('active');
+        document.getElementById('escooterServices').classList.remove('active');
+        
+        // Показываем выбранный тип услуг
+        if (type === 'bike') {
+            document.getElementById('bikeBtn').classList.add('active');
+            document.getElementById('bikeServices').classList.add('active');
+        } else {
+            document.getElementById('escooterBtn').classList.add('active');
+            document.getElementById('escooterServices').classList.add('active');
+        }
+        
+        // Обновляем калькулятор
+        updateCalculator();
+    }
+
+    // Данные для калькулятора
+    let selectedServices = [];
+    
+    // Функция обновления калькулятора
+    function updateCalculator() {
+        const checkboxes = document.querySelectorAll('.service-checkbox:checked');
+        selectedServices = Array.from(checkboxes).map(checkbox => ({
+            name: checkbox.getAttribute('data-name'),
+            price: parseInt(checkbox.getAttribute('data-price'))
+        }));
+        
+        // Обновляем счетчик
+        document.getElementById('selectedCount').textContent = selectedServices.length;
+        
+        // Считаем общую стоимость
+        const total = selectedServices.reduce((sum, service) => sum + service.price, 0);
+        document.getElementById('totalPrice').textContent = total.toLocaleString('ru-RU') + ' ₽';
+    }
+    
+    // Сброс выбора
+    function resetSelection() {
+        document.querySelectorAll('.service-checkbox').forEach(checkbox => {
+            checkbox.checked = false;
+        });
+        selectedServices = [];
+        updateCalculator();
+    }
+    
+    // Открытие модального окна записи
+    function openBookingModal() {
+        if (selectedServices.length === 0) {
+            alert('Пожалуйста, выберите хотя бы одну услугу');
+            return;
+        }
+        
+        // Определяем тип техники
+        const isBike = document.getElementById('bikeServices').classList.contains('active');
+        document.getElementById('selectedType').textContent = isBike ? 'Велосипед' : 'Электросамокат';
+        
+        // Заполняем список выбранных услуг
+        const servicesList = document.getElementById('selectedServicesList');
+        servicesList.innerHTML = '';
+        
+        if (selectedServices.length > 0) {
+            selectedServices.forEach(service => {
+                const serviceItem = document.createElement('div');
+                serviceItem.style.padding = '8px 0';
+                serviceItem.style.borderBottom = '1px solid #eee';
+                serviceItem.innerHTML = `
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>${service.name}</span>
+                        <span style="font-weight: bold; color: #F26B36;">${service.price} ₽</span>
+                    </div>
+                `;
+                servicesList.appendChild(serviceItem);
+            });
+        }
+        
+        // Обновляем стоимость в модальном окне
+        const total = selectedServices.reduce((sum, service) => sum + service.price, 0);
+        document.getElementById('modalTotalPrice').textContent = total.toLocaleString('ru-RU') + ' ₽';
+        
+        // Показываем модальное окно
+        document.getElementById('bookingModal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    // Закрытие модального окна записи
+    function closeBookingModal() {
+        document.getElementById('bookingModal').classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+    
+    // Обработка формы записи
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const type = document.getElementById('selectedType').textContent;
+        const name = document.getElementById('bookingName').value;
+        const phone = document.getElementById('bookingPhone').value;
+        const dateTime = document.getElementById('bookingDateTime').value;
+        const message = document.getElementById('bookingMessage').value;
+        const total = selectedServices.reduce((sum, service) => sum + service.price, 0);
+        
+        // Формируем список услуг для сообщения
+        const servicesText = selectedServices.map(service => `- ${service.name}: ${service.price} ₽`).join('\n');
+        
+        alert(`Спасибо, ${name}!\n\nВаша заявка на ремонт ${type} отправлена.\n\nВыбранные услуги:\n${servicesText}\n\nОбщая стоимость: ${total.toLocaleString('ru-RU')} ₽\nДата и время: ${dateTime}\nТелефон: ${phone}\n\nМы свяжемся с вами в ближайшее время для подтверждения.`);
+        
+        closeBookingModal();
+        resetSelection();
+    });
+    
+    // Инициализация: добавляем обработчики на чекбоксы
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.service-checkbox').forEach(checkbox => {
+            checkbox.addEventListener('change', updateCalculator);
+        });
+        
+        // Настраиваем дату и время по умолчанию (завтра, 10:00)
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        tomorrow.setHours(10, 0, 0, 0);
+        
+        const formattedDate = tomorrow.toISOString().slice(0, 16);
+        document.getElementById('bookingDateTime').value = formattedDate;
+        document.getElementById('bookingDateTime').min = new Date().toISOString().slice(0, 16);
+        
+        // Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Закрытие модального окна при клике на оверлей
+        document.getElementById('bookingModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeBookingModal();
+            }
+        });
+        
+        // Закрытие модального окна при нажатии ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeBookingModal();
+            }
+        });
+        
+        // Добавляем активный класс текущей странице в меню
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.mobile-nav .nav-link').forEach(link => {
+            const linkHref = link.getAttribute('href');
+            if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
+                link.style.fontWeight = 'bold';
+                link.style.color = '#fff';
+                link.style.backgroundColor = 'rgba(255,255,255,0.2)';
+                link.style.borderRadius = '5px';
+                link.style.paddingLeft = '15px';
+            }
+        });
+    });
+    </script>
+</body>
+</html>
